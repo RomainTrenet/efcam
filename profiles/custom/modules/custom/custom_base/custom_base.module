@@ -1,0 +1,353 @@
+<?php
+
+//AS DEFAULT MAX FILESIZE
+define('EC_DEFAULT_MAX_FILESIZE', '2048KB');
+
+/**
+ * Implementation of hook_menu
+ *
+ * @return array
+ */
+function custom_base_menu() {
+	$path = drupal_get_path('module', 'custom_base');
+	$items['custom/config/efcam/settings'] = array(
+		'title' => t('EFCAM'),
+		'description' => 'Configure EFCAM.',
+		'page callback' => 'drupal_goto',
+		'page arguments' => array('/admin/config/efcam/settings/global'),
+		'access arguments' => array('administer efcam'),
+		//'type' => MENU_LOCAL_TASK,
+		'weight' => '0',
+		'menu_name' => 'management',
+	);
+	$items['custom/config/efcam/settings/global'] = array(
+		'title' => t('Global settings'),
+		'description' => 'Configure EFCAM global settings.',
+		'page callback' => '_custom_base_global_admin_view',
+		'access arguments' => array('administer efcam'),
+		'file' => 'custom_base.admin.inc',
+		'file path' => $path,
+		'type' => MENU_LOCAL_TASK,
+		'weight' => '-50',
+	);
+	
+	// Patient page admin and contextual links.
+	$items['custom/config/efcam/settings/patient'] = array(
+		'title' => 'Patient',
+		'description' => 'Configure patient page.',
+		'page callback' => 'drupal_goto',
+		'page arguments' => array('custom/config/efcam/settings/patient/edit'),
+		'access arguments' => array('administer efcam'),
+		'type' => MENU_LOCAL_TASK,
+		'weight' => 20,
+	);
+	$items['custom/config/efcam/settings/patient/edit'] = array(
+		'title' => 'Edit page',
+		'description' => 'Configure patient page.',
+		'page callback' => '_custom_pages_patient_page_admin_view',
+		'access arguments' => array('administer efcam'),
+		'file' => 'custom_pages.admin.inc',
+		'file path' => drupal_get_path('module', 'custom_pages'),
+		'type' => MENU_DEFAULT_LOCAL_TASK,
+	);
+	$items['custom/config/efcam/settings/patient/view'] = array(
+		'title' => 'View page',
+		'page callback' => 'drupal_goto',
+		'page arguments' => array('patient'),
+		'access arguments' => array('administer efcam'),
+		'type' => MENU_LOCAL_TASK,
+	);
+	
+	//Pro page admin and contextual links
+	$items['custom/config/efcam/settings/pro'] = array(
+		'title' => 'Pro',
+		'description' => 'Configure pro page.',
+		'page callback' => 'drupal_goto',
+		'page arguments' => array('custom/config/efcam/settings/pro/edit'),
+		'access arguments' => array('administer efcam'),
+		'type' => MENU_LOCAL_TASK,
+		'weight' => 20,
+	);
+	$items['custom/config/efcam/settings/pro/edit'] = array(
+		'title' => 'Edit page',
+		'description' => 'Configure pro page.',
+		'page callback' => '_custom_pages_pro_page_admin_view',
+		'access arguments' => array('administer efcam'),
+		'file' => 'custom_pages.admin.inc',
+		'file path' => drupal_get_path('module', 'custom_pages'),
+		'type' => MENU_DEFAULT_LOCAL_TASK,
+	);
+	$items['custom/config/efcam/settings/pro/view'] = array(
+		'title' => 'View page',
+		'page callback' => 'drupal_goto',
+		'page arguments' => array('pro'),
+		'access arguments' => array('administer efcam'),
+		'type' => MENU_LOCAL_TASK,
+	);
+	
+	// User ajax login.
+	$items['ajax/user/login'] = array(
+		'page callback' => '_ajax_user_login_block_callback',
+		'type' => MENU_CALLBACK,
+		'access callback' => TRUE,
+		'access arguments' => TRUE,
+	);
+	
+	return $items;
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function custom_base_preprocess_page(&$vars) {
+	drupal_add_js(drupal_get_path('module', 'custom_base') . '/js/custom_base.js', array(
+		'type' => 'file',
+		'group' => JS_THEME,
+		'scope' => 'footer',
+		//'cache' => FALSE,
+		'weight' => 10,
+	));
+}
+
+/**
+ * Get the list of Custom pages
+ * for contextual links for example
+ * @return array of pages id
+ */
+function _custom_base_get_common_pages_list() {
+	return array('patient', 'pro');
+}
+
+/**
+ * Create contextual link on AS pages list
+ */
+function custom_base_block_view_system_main_alter(&$data, $block) {
+	//Add Contextual link to pages
+	if (user_access('access contextual links')) {
+		$pages = _custom_base_get_common_pages_list();
+		$current_path = current_path();
+		
+		//For each page, set contextual links format as page name / module name
+		foreach ($pages as $key => $page) {
+			($current_path == $page) ? $data['content']['#contextual_links'][$page] = array( $page, array(basename(__FILE__, '.module')) ) : NULL;
+		}
+	}
+}
+
+/**
+ * Removes ?destination= on Custom pages list contextual link.
+ */
+function custom_base_contextual_links_view_alter(&$element, $items) {
+	//Removes destination on custom pages
+	$pages = _custom_base_get_common_pages_list();
+	foreach ($pages as $key => $page) {
+		if(isset($element['#links'][$page.'-edit'])) {
+			unset($element['#links'][$page.'-edit']['query']);
+		}
+	}
+}
+
+/**
+ * Ajax user login link form.
+ */
+function ajax_user_login_link_form($form, &$form_state) {
+	$form = array();
+	
+	// Defines the ajaxified link
+	$form['ajaxified_link'] = array(
+		'#type' => 'link',
+		'#title' => t('Log in'),
+		'#attributes' => array(
+			'class' => array('popup', 'btn'),
+		),
+		// Set the ajax properties
+		'#ajax' => array(
+			'wrapper' => 'fancy_container',
+			'method' => 'html',
+			'effect' => 'fade',
+			'progress' => array('type' => 'none'),
+		),
+		// The url of the ajax callback as defined in the hook_menu
+		'#href' => 'ajax/user/login',
+	);
+	
+	return $form;
+}
+/**
+ * Ajax user login block link callback.
+ * Ajax callback for USER LOGIN form.
+ */
+function _ajax_user_login_block_callback() {
+	//Create user login form, avoiding "?destination="
+	/*$user_login_block = drupal_get_form('user_login_block');
+	
+	$markup = '<div id="fancy_container">' . render($user_login_block) . '</div>';*/
+	$markup = '<div id="fancy_container">' . 'TEST FANCYBOX' . '</div>';
+	
+	$commands = array();
+	// replace the empty div with the new markup
+	$commands[] = ajax_command_replace('#fancy_container', $markup);
+	
+	//login_popup
+	$fancy_id = 'login_popup';
+	$commands[] = ajax_command_invoke(NULL, 'custom_base_fancy_box', array($fancy_id));
+	
+	$page = array('#type' => 'ajax', '#commands' => $commands);
+	ajax_deliver($page);
+}
+
+/**
+ * Implements hook_permission().
+ *
+ * @ingroup registration_core
+ */
+function custom_base_permission() {
+	return array(
+		'administer efcam' => array(
+			'title' => t('Administer EFCAM'),
+			'description' => t('Perform administration tasks for EFCAM.'),
+		),
+	);
+}
+
+/**
+ *  Removing completely a list of modules
+ */
+function _custom_base_completely_remove_modules($modules)
+{
+	module_disable($modules);
+	drupal_uninstall_modules($modules);
+	db_delete('system')
+		->condition('name', $modules, 'IN')
+		->condition('type', 'module')
+		->execute();
+}
+
+/**
+ * Set placeholders to form elements
+ * @param $element
+ */
+function _custom_base_auto_placeholders(&$form) {
+	$types = array('textfield', 'password');
+	if (isset($form['#type'])) {
+		if (in_array($form['#type'], $types)) {
+			$form['#attributes']['placeholder'] = $form['#title'];
+		}
+	}
+	foreach (element_children($form) as $key) {
+		_custom_base_auto_placeholders($form[$key]);
+	}
+}
+
+/**
+ * Get a google map from address, with width, height, title, etc.
+ * @param $address
+ * @param null $title
+ * @param int $width
+ * @param int $height
+ * @param string $label_display
+ * @param string $view_mode
+ * @param bool $include_map
+ * @param bool $include_static_map
+ * @param int $zoom
+ * @param string $link_text
+ * @param string $address_text
+ * @param string $static_map_type
+ * @return array
+ */
+function _custom_base_get_default_map(
+	$address, $title = NULL, $width = 200, $height = 200, $label_display = 'above', $view_mode = 'full',
+	$include_map = TRUE, $include_static_map = FALSE, $zoom = 14, $link_text = '', $address_text = '', $static_map_type = 'roadmap'
+) {
+	return array(
+		'#theme' => 'field',
+		'#weight' => '0',
+		'#title' => $title,
+		'#access' => TRUE,
+		'#label_display' => $label_display,
+		'#view_mode' => $view_mode,
+		'#language' => 'und',
+		'#entity_type' => 'field',
+		'#bundle' => 'map',
+		'#field_type' => 'text',
+		'#field_name' => 'as_map',
+		'#field_translatable' => '0',
+		'#items' => array(
+			0 => array(
+				'value' => $address,
+				'format' => '',
+				'safe_value' => $address,
+			),
+		),
+		'#formatter' => 'simple_map',
+		0 => array(
+			'#theme' => 'simple_gmap_output',
+			'#include_map' => $include_map,
+			'#include_static_map' => $include_static_map,
+			'#include_link ' => FALSE,
+			'#include_text' => FALSE,
+			'#width' => $width,
+			'#height' => $height,
+			'#static_scale' => 1,
+			'#url_suffix' => urlencode($address),
+			'#zoom' => $zoom,
+			'#link_text' => $link_text,
+			'#address_text' => $address_text,
+			'#map_type' => 'm',
+			'#langcode' => 'en',
+			'#static_map_type' => $static_map_type,
+			'#apikey' => '',
+		),
+	);
+}
+
+/**
+ * Set new title from wysiwyg
+ * Removes <p> tags, and keep <br>
+ * @param $new_title
+ */
+function _custom_base_set_custom_title_form_wysiwyg($new_title) {
+	if(!empty($new_title)) {
+		$new_title = preg_replace('/<p[^>]*>(.*)<\/p[^>]*>/i', '$1', $new_title);
+		drupal_set_title($new_title, PASS_THROUGH);
+	}
+}
+
+/**
+ * Set new title from wysiwyg
+ * Removes <p> tags, and keep <br>
+ * @param $new_title
+ */
+function _custom_base_get_clean_var_from_wysiwyg($var) {
+	if(!empty($var)) {
+		return preg_replace('/<p[^>]*>(.*)<\/p[^>]*>/i', '$1', $var);
+	}
+}
+
+function _custom_base_get_generic_wysiwyg_prefix() {
+	return ('<p><em>'. t("If you want to make a breakline (&lt;br&gt;), type MAJ+ENTER. If you want to make a new paragraph, type ENTER.") . '</em></p>');
+}
+
+function _custom_base_get_generic_wysiwyg_title_prefix() {
+	return ('<p><em>'. t("If you want to make a breakline (&lt;br&gt;), type MAJ+ENTER. If you want to make a new paragraph, type ENTER. &lt;p&gt; tags wont appear, you don't need to add a &lt;h1&gt; tag.") . '</em></p>');
+}
+
+function custom_base_forms($form_id, $args) {
+	/*dpm($form_id);
+	dpm($args);*/
+	if (isset($args[0]) && isset($args[1])) {
+		if ( is_string($args[0]) && is_array($args[1]) ){
+			$potential_form_id = $args[0] . '_' . $args[1]['module_name'] . '_' . $args[1]['context'];
+			/*dpm($potential_form_id);
+			dpm($args[0]);*/
+			if ($form_id == $potential_form_id) {
+				return array(
+					$form_id => array(
+						'callback' => $args[0],
+						'callback arguments' => array($args[1]),
+					),
+				);
+			}
+		}
+	}
+}

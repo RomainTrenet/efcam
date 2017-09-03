@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Implementation of hook_theme
+ */
+function custom_layout_theme()
+{
+  $path = drupal_get_path('module', 'custom_layout') .'/theme';
+  return array(
+		'custom_layout_branding' => array(
+		  'variables' => array('logo' => NULL, 'site_name' => NULL, 'site_slogan' => NULL),
+		  'template' => 'custom_layout_branding_template',
+		  'path' => $path,
+		),
+	  'custom_layout_main_content_header_theme' => array(
+		  'variables' => array('image' => NULL, 'content' => NULL),
+		  'template' => 'custom_layout_main_content_header_template',
+		  'path' => $path,
+	  ),
+	  'custom_layout_above_main_header' => array(
+		  'variables' => array('title' => NULL, 'subtitle' => NULL),
+		  'template' => 'custom_layout_above_main_header_template',
+		  'path' => $path,
+	  ),
+	  'custom_layout_header_ctas' => array(
+		  'variables' => array('ctas' => NULL),
+		  'template' => 'custom_layout_header_cta_template',
+		  'path' => $path,
+	  ),
+  );
+}

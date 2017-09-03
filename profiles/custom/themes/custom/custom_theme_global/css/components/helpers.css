@@ -1,0 +1,17 @@
+.table {
+  display: table;
+  width: 100%; }
+  .table .table-cell {
+    display: table-cell;
+    vertical-align: middle; }
+
+.f-left {
+  float: left; }
+
+.f-right {
+  float: right; }
+
+.f-none {
+  float: none; }
+
+/*# sourceMappingURL=helpers.css.map */

@@ -1,0 +1,141 @@
+@import "../config_mobile";
+
+/**
+ * Header
+ */
+.l-page { padding-top: $menu_height_big; }
+body.admin-menu #header { top: $slicknav-menu-height!important; } // Against sticky top: 0.
+#header {
+  height: $menu_height_big;
+  .table {
+    height: $menu_height_big;
+  }
+}
+.slicknav_menu { position: fixed; top: 0; left: 0; width: 100%; }
+
+/**
+ *  Default Main content Header
+ */
+.ec-content-header { height: 444px; }
+
+/**
+ * Disc header
+ */
+.l-content-header {
+  margin-bottom: 2*$space;
+  .ec-content-header { }
+  $disc-offset : 150px;
+  .ec-above-header { margin-bottom: $disc-offset; }
+  .ec-above-header-inner { bottom: -$disc-offset; }
+  .bkgd img { max-height: 100%; }
+}
+.ec-disc {
+  $disc-border: 16px; $disc-height: 420px + 2*$disc-border;
+  .disc-wrapper { height: $disc-height; width: $disc-height; border-width: $disc-border; }
+  h1 { font-size: 2.6em; }
+  h2 { font-size: 1.2em; }
+  span.icon { font-size:44px; bottom: 2*$space; }
+}
+
+
+/**
+ * Sections styles
+ */
+.section {
+  margin-top: 4*$space; margin-bottom: 4*$space;
+  &:last-child { margin-bottom: 0; }
+  .visu,
+  .visus { margin-bottom: 2*$space; }
+  &.section-visus-cosmic {
+    .visus-cosmic {
+      .visus-inner { padding-bottom: 4*$space; position: relative; }
+      .visu {
+        &.first { z-index: 1; text-align: left; }
+        &.second { z-index: 2; position: absolute; bottom: 0; right: 0; }
+      }
+    }
+  }
+  &.section-visus-cosmic-2 {
+    .visus-cosmic {
+      .visus-inner { padding-top: 4*$space; position: relative; }
+      .visu {
+        &.first { z-index: 1; text-align: left; }
+        &.second { z-index: 2; position: absolute; top: 0; right: 0; }
+      }
+    }
+  }
+}
+
+//Section with curves
+.section-curve {
+  padding-top: 2*$space; padding-bottom: 2*$space;
+  .container-inner {
+    &:before,
+    &:after { left: -50%; width: 200%; height: 7*$space; }
+    &:before { margin-bottom: -6*$space; }
+    &:after { margin-top: -6*$space; }
+  }
+}
+
+//Section with final btn
+.section-btn-final { padding-bottom: 4*$space; }
+
+//Section highlighted
+//.section-highlighted { margin-bottom: 110px; }
+
+//Image bottom section
+.section-visu-bottom-right {
+  margin-bottom: -(4*$space);
+  .row { }
+  .visu.visu-bottom-right { padding-top: 2*$space; margin-bottom: -(1.5*$space); }
+  .visu-wrapper { text-align: right; }
+  img { }
+}
+
+//Mobile
+@media (max-width: 767px) {
+  /**
+   * Header layout
+   */
+
+  /**
+   *  Default Main content Header
+   */
+  .ec-content-header { height: 220px; }
+
+  /**
+   * Disc header
+   */
+  .ec-disc {
+    $disc-border: 8px; $disc-height: 264px + 2*$disc-border;
+    .disc-wrapper { height: $disc-height; width: $disc-height; border-width: $disc-border; }
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1em; }
+    span.icon { font-size:22px; bottom: $space; }
+  }
+
+  /**
+   * Sections styles
+   */
+  .section {
+    .visus-cosmic {
+      .visus-inner {}
+      .visu {
+        &.first {}
+        &.second { width: 50%; }
+      }
+    }
+  }
+}
+
+
+//Mobile
+@media (min-width: 768px) {
+  .l-page { padding-top: $menu_height_small; }
+  #header {
+    height: $menu_height_small;
+    .table {
+      height: $menu_height_small;
+    }
+  }
+}

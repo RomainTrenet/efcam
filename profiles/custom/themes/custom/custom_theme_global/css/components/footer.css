@@ -1,0 +1,35 @@
+@import url("../_config.less");
+/*Footer*/
+ul#footer1-menu {
+  margin: 30px 0 20px 0;
+  padding: 0;
+  text-align: center; }
+
+ul#footer1-menu li {
+  display: inline;
+  list-style: none; }
+
+ul#footer1-menu a, ul#footer1-menu a:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #222222;
+  margin: 0 10px;
+  font-size: 1.2em; }
+
+ul#footer1-menu a:hover {
+  text-decoration: none;
+  color: #3de6a8;
+  margin: 0 10px; }
+
+.small-carrefour {
+  margin: 40px auto 0 auto;
+  background-image: url(../../../../modules/api_store/as_blocks/images/small-carrefour.png);
+  zoom: 100%;
+  width: 71px;
+  height: 71px; }
+
+/*------------------responsive-------------------*/
+@media screen and (max-width: 680px) {
+  /*Footer*/
+  .small-carrefour {
+    zoom: 70%; } }

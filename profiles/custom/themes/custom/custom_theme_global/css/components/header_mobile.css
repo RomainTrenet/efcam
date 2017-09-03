@@ -1,0 +1,59 @@
+/*
+ * COLORS
+ */
+/*
+$prim-color : #3de6a8;
+$prim-hov-color : #3dffa8;
+$error-color : #ff5363;
+
+$variant_first : #8995b6;
+$variant_second : #657192;
+*/
+/*
+ * Vars
+ */
+/*
+ * Vars
+ */
+/**
+ * CTAs
+ */
+#header .ctas li {
+  font-size: 12px; }
+
+#header .ctas a.link {
+  font-size: 1em; }
+
+@media (max-width: 767px) {
+  /**
+   * Header layout
+   */
+  #header {
+    text-align: center; }
+  #header .ctas {
+    margin-top: 20px; }
+  #header .table {
+    display: block;
+    width: auto; }
+  #header .col-branding,
+  #header .col-cta {
+    display: block;
+    width: 100%; }
+  #header .ctas {
+    /*text-align: center;*/ }
+  #header .ctas li {
+    margin-top: 20px; }
+  #header .ctas li:first-child {
+    margin-top: 0; }
+  #header .col-branding {
+    padding-top: 10px;
+    padding-bottom: 10px; } }
+
+@media (min-width: 767px) {
+  /**
+   * CTAs
+   */
+  #header .ctas li {
+    margin-left: 20px; }
+  #header .ctas li:first-child {
+    margin-left: 0; } }

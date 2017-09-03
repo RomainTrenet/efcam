@@ -1,0 +1,24 @@
+@import "../config_desktop";
+
+#header {
+  .row {
+    .col-branding { }
+  }
+}
+
+/**
+ *  Default Main content Header
+ */
+.ec-content-header { height: 444px; }
+
+/**
+ * CTAs
+ */
+#header {
+  .ctas {
+    ul { }
+    li { margin-left: 100px; font-size: $base-font-size; }
+    li:first-child { margin-left: 0; }
+    a { font-size: 1.15em; }
+  }
+}

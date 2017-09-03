@@ -1,0 +1,15 @@
+name = Custom | Media conf
+description = Média configuration for Custom
+core = 7.x
+package = Custom
+version = 7.x-1.0
+dependencies[] = media
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[user_permission][] = access media browser
+features[user_permission][] = administer media browser
+features[variable][] = media_icon_base_directory
+features_exclude[dependencies][ctools] = ctools
+features_exclude[dependencies][features] = features
+features_exclude[dependencies][strongarm] = strongarm
+project path = profiles/custom/modules/features

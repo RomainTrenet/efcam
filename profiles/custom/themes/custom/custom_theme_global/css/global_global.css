@@ -1,0 +1,75 @@
+/*
+ * COLORS
+ */
+/*
+$prim-color : #3de6a8;
+$prim-hov-color : #3dffa8;
+$error-color : #ff5363;
+
+$variant_first : #8995b6;
+$variant_second : #657192;
+*/
+/*
+ * Vars
+ */
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease-out; }
+
+body {
+  background-color: #FFFFFF; }
+
+.l-page p, .l-page a {
+  font-family: 'robotoslabregular', Sans-serif;
+  color: #2E4A70;
+  font-size: 1em;
+  line-height: normal; }
+
+a {
+  display: inline-block;
+  text-decoration: none; }
+
+p {
+  margin-bottom: 1.5em; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle; }
+
+/**
+ * Titles.
+ **/
+h1, h2, h3, h4, h5, h6 {
+  color: #2E4A70;
+  font-family: 'robotoslabregular', Helvetica, Sans-Serif;
+  line-height: normal; }
+
+h1 {
+  font-size: 1.7em; }
+
+h2 {
+  font-size: 1.14em;
+  font-family: 'robotoslabbold', Helvetica, Sans-Serif; }
+
+iframe {
+  max-width: 100%; }
+
+a.booking {
+  text-transform: uppercase; }
+
+/**
+ * Section highlighted
+ */
+.section-highlighted .infos h1 {
+  margin-bottom: 1em;
+  font-family: 'robotoslabbold', Helvetica, Sans-Serif;
+  font-size: 2.8em; }
+
+.section-highlighted .infos p {
+  font-family: 'robotoslablight', Helvetica, Sans-Serif;
+  font-size: 1.6em; }
+
+.section-highlighted .infos .btn {
+  margin-top: 1em; }

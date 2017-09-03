@@ -1,0 +1,6 @@
+@import "config_desktop";
+
+//Body font-size will be use by em font-size elements
+body {
+    min-width: 992px; font-size: $base-font-size;
+}

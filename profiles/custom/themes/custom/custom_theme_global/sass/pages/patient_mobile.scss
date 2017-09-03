@@ -1,0 +1,25 @@
+@import "../config_mobile";
+
+.page-patient {
+  //.section-second .row { padding-bottom: 8*$space; }
+  .section-third { margin-bottom: 0; }
+  .section-fourth {
+    margin: -2*$space auto 0;
+    padding-top: 4*$space;
+    padding-bottom: 2*$space;
+  }
+}
+
+.map-infos {
+  padding: $space/2;
+  margin-bottom: $space;
+}
+
+.section-fourth {
+  .infos { padding-top: 2*$space; }
+}
+
+//Mobile
+@media (max-width: 767px) {
+
+}

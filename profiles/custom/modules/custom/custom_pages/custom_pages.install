@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * User functionnalities.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function custom_pages_install() {
+  drupal_set_installed_schema_version('custom_pages', '7100');
+}
+
+/**
+ * Create default 'become partner' webform.
+ */
+function custom_pages_update_7103(&$sandbox) {
+  // AS user create default webform.
+  module_load_include('inc', 'custom_pages', 'includes/custom_pages_default_contact_webform');
+	custom_pages_create_contact_webform();
+}
+
+/**
+ * Create default booking webform.
+ */
+function custom_pages_update_7104(&$sandbox) {
+	// AS user create default webform.
+	module_load_include('inc', 'custom_pages', 'includes/custom_pages_default_booking_webform');
+	custom_pages_create_booking_webform();
+}

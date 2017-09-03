@@ -1,0 +1,139 @@
+name = Custom profile
+description = Profile for custom website.
+core = 7.x
+
+;Installation profile is exclusive, the installer will auto-select it.
+exclusive = true
+
+;configure = admin/config/structure/api_store
+
+;users[superduper][uid]    = 1
+;users[superduper][name]   = admin
+;users[superduper][mail]   = admin@admin
+;users[superduper][roles]  = Admin,Publisher
+;users[superduper][status] = 1
+
+;users[siteadmin][uid]    = 2
+;users[siteadmin][name]   = siteadmin
+;users[siteadmin][mail]   = changeme@changeme
+;users[siteadmin][roles]  = Admin,Publisher
+;users[siteadmin][status] = 1
+
+; ----------
+; Variables
+; ----------
+;variables[date_api_version] = '7.2'
+;variables[date_default_timezone] = 'Europe/Paris'
+
+; Core modules
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+dependencies[] = syslog
+
+; Contrib modules
+dependencies[] = libraries
+dependencies[] = addressfield
+dependencies[] = adminimal_admin_menu
+dependencies[] = admin_views
+dependencies[] = backup_migrate
+dependencies[] = browscap
+;dependencies[] = browscap_block
+dependencies[] = browscap_ctools
+dependencies[] = date
+dependencies[] = email
+dependencies[] = entity
+dependencies[] = entityreference
+dependencies[] = entityreference_autocomplete
+dependencies[] = features
+dependencies[] = features_translations
+dependencies[] = field_group
+dependencies[] = i18n
+dependencies[] = imce
+dependencies[] = imce_wysiwyg
+dependencies[] = jquery_update
+dependencies[] = l10n_update
+;For mobile detect
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = linkit
+dependencies[] = media
+dependencies[] = media_wysiwyg
+dependencies[] = metatag
+;dependencies[] = mobile_detect
+;dependencies[] = mobile_detect_import
+dependencies[] = module_filter
+;dependencies[] = page_manager
+;dependencies[] = panels
+;dependencies[] = panels_mini
+;dependencies[] = panels_node
+;dependencies[] = panels_ipe
+;dependencies[] = panelizer
+dependencies[] = pathauto
+dependencies[] = redirect
+dependencies[] = rules
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = variable
+dependencies[] = variable_admin
+dependencies[] = views_bulk_operations
+dependencies[] = views_content
+dependencies[] = views_ui
+dependencies[] = wysiwyg
+dependencies[] = xmlsitemap
+dependencies[] = xmlsitemap_menu
+dependencies[] = xmlsitemap_node
+dependencies[] = xmlsitemap_engines
+
+;Call after all
+;dependencies[] = mobile_switch
+
+; ----- Custom modules -----
+; Structure & menu
+dependencies[] = custom_base
+dependencies[] = custom_layout
+dependencies[] = ef_booking_timeslots
+
+;Pages
+dependencies[] = custom_pages
+;dependencies[] = efcam_meet
+
+;Defaut content (needed pages)
+dependencies[] = custom_default_content
+
+; Features
+dependencies[] = custom_features_conf
+dependencies[] = custom_media_conf
+dependencies[] = custom_system_conf
+dependencies[] = custom_themes_configuration
+dependencies[] = custom_wysiwyg_conf
+dependencies[] = custom_rights
+
+
+
+; Content types
+;dependencies[] = ...
+
+; Taxonomies
+;dependencies[] = ...
+
+; Views
+;dependencies[] = ...
+
+; Display
+;dependencies[] = ...

@@ -1,0 +1,8 @@
+name = EFCAM | Meet
+description = This module supports functions for meeting features
+package = EFCAM
+core = 7.x
+version = "7.x-1.0"
+
+dependencies[] = menu
+dependencies[] = custom_layout

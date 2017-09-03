@@ -1,0 +1,8 @@
+name = Custom | Default content
+description = This module is used to set default content at the instalation. This should be removed in production
+package = Custom
+core = 7.x
+version = "7.x-1.0"
+
+dependencies[] = file
+dependencies[] = custom_pages

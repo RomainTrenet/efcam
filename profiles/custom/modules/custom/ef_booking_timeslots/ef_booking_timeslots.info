@@ -1,0 +1,8 @@
+name = Efcam | Booking timeslots
+description = This module is used to override booking timeslots
+package = Custom
+core = 7.x
+version = "7.x-1.0"
+
+dependencies[] = booking_timeslots
+;dependencies[] = menu

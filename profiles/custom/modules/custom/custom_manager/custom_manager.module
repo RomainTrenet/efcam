@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Custom | Manager feature.
+ */
+
+include_once 'custom_manager.features.inc';

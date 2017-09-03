@@ -1,0 +1,13 @@
+name = "Custom | Pages"
+description = "Module to manage pages"
+package = Custom
+core = 7.x
+version = "7.x-1.0"
+project = "as_pages"
+
+dependencies[] = custom_base
+dependencies[] = webform
+dependencies[] = webform_phone
+
+
+files[] = includes/custom_pages_default_header_conf.inc

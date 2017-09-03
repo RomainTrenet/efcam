@@ -1,0 +1,26 @@
+{
+  "name": "custom_theme_global",
+  "version": "1.0.0",
+  "scripts": {
+    "sass:dev": "gulp",
+    "sass:prod": "gulp sass:prod"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-csso": "^2.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-sourcsemaps": "^1.5.2",
+    "gulp-watch": "^4.3.11"
+  },
+  "description": "Custom Theme Global Package.json",
+  "main": "gulpfile.js",
+  "author": "Romain Trenet",
+  "license": "ISC"
+}

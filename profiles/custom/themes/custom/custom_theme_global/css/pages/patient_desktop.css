@@ -1,0 +1,62 @@
+/*
+ * COLORS
+ */
+/*
+$prim-color : #3de6a8;
+$prim-hov-color : #3dffa8;
+$error-color : #ff5363;
+
+$variant_first : #8995b6;
+$variant_second : #657192;
+*/
+/*
+ * Vars
+ */
+/*
+ * Vars
+ */
+.page-patient .section-second .row {
+  padding-bottom: 160px; }
+
+.page-patient .section-third {
+  margin-top: -145px;
+  margin-bottom: 0; }
+
+.page-patient .section-fourth {
+  margin: -170px auto 0;
+  padding-top: 210px;
+  padding-bottom: 190px; }
+
+.map-wrapper {
+  width: 70%; }
+
+.map-infos {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 312px;
+  width: 312px;
+  margin-top: -156px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 20px;
+  display: table; }
+
+.map-infos .vcard {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.map-infos .vcard p, .map-infos .vcard a {
+  font-size: 18px; }
+
+@media (min-width: 1200px) {
+  /**
+   * Map infos
+   */
+  .map-infos {
+    height: 352px;
+    width: 352px;
+    margin-top: -176px; }
+  .map-infos .vcard p, .map-infos .vcard a {
+    font-size: 22px; } }

@@ -1,0 +1,49 @@
+// Import variables, abstractions, base styles and components.
+// Uncomment the next lines and adjust them to your needs.
+//@import "variables/{YOUR FILE NAME HERE}";
+//@import "abstractions/{YOUR FILE NAME HERE}";
+//@import "base/{YOUR FILE NAME HERE}";
+//@import "components/{YOUR FILE NAME HERE}";
+
+@import "_config_global.scss";
+@import "compass";
+
+* {
+  @include box-sizing('border-box');
+  @include transition(all $transition_time $transition_ease);
+}
+
+body { background-color: $background-color; }
+
+// Page content, without admin.
+.l-page {
+  p, a {
+    font-family: 'robotoslabregular', Sans-serif; color: $main-color; font-size: 1em; line-height: normal;
+  }
+}
+
+a { display: inline-block;text-decoration: none; }
+p { margin-bottom: 1.5em; }
+img { max-width: 100%; height: auto; display: inline-block; vertical-align: middle; }
+
+/**
+ * Titles.
+ **/
+h1, h2, h3, h4, h5, h6 { color: $main-color; font-family: 'robotoslabregular', Helvetica, Sans-Serif; line-height: normal; }
+h1 { font-size: 1.7em; }
+h2 { font-size: 1.14em; font-family: 'robotoslabbold', Helvetica, Sans-Serif; }
+
+// Others.
+iframe { max-width: 100%; }
+a.booking { text-transform: uppercase; }
+
+/**
+ * Section highlighted
+ */
+.section-highlighted {
+  .infos {
+    h1 { margin-bottom: 1em; font-family: 'robotoslabbold', Helvetica, Sans-Serif; font-size: 2.8em; }
+    p { font-family: 'robotoslablight', Helvetica, Sans-Serif; font-size: 1.6em; }
+    .btn { margin-top: 1em; }
+  }
+}

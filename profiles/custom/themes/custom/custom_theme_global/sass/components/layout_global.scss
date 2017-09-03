@@ -1,0 +1,139 @@
+@import "../config_global";
+
+/* =============================================================================
+ *   Layout, Position & Z-index
+ * ========================================================================== */
+/*#page-wrapper {
+  position: relative;
+}
+.topnav {
+  z-index: 2;
+  position: relative;
+}
+#page {
+  padding-top: 0px;
+}
+#header {
+  z-index: 10!important;//Sticky js
+}
+#header-sticky-wrapper {
+  height: 0!important;//Sticky js
+}*/
+
+/**
+ * Header
+ */
+#header {
+  position: absolute; z-index: 10; top: 0; left: 0; width: 100%!important; // Against sticky.
+}
+.slicknav_menu { z-index: 11; }
+.l-content-header {
+  position: relative;
+  .ec-content-header { position: relative; z-index: 1; }
+  .ec-above-header { position: relative; z-index: 2; }
+}
+
+/**
+ * Icons absolute
+ Just add more padding-left to your parent.
+ */
+.icon-absolute {
+  position: relative;
+  &:before { position: absolute; left: 0; margin: 0; top: 50%; margin-top: -0.5em; }
+}
+
+
+/**
+ * Sections styles
+ */
+.section {
+  .title {
+    h1 { margin-bottom: 1em; }
+  }
+  .visu { text-align: center; }
+  .visu-rouded .visu-wrapper { border-radius: 50%; display: inline-block; overflow: hidden; }
+
+  // Shadows.
+  .visu-top-shadow {
+    .visu-wrapper { box-shadow: 0px (-$global-shadow-size) 0 $background-color; }
+  }
+  .visu-bottom-shadow {
+    .visu-wrapper { box-shadow: 0px $global-shadow-size $background-color }
+  }
+
+  .visus-cosmic {
+    .visus-inner { }
+    .visu {
+      &.first { z-index: 1; }
+      &.second { z-index: 2; }
+    }
+  }
+}
+//Section with curves
+.section-curve {
+  overflow: hidden;
+  .container-inner {
+    position: relative;
+    &:before,
+    &:after { content: ""; display: block; position: absolute; z-index: 1; }
+    &:before { bottom: 100%; border-radius: 100% 100% 0 0; }
+    &:after { top: 100%; border-radius: 0 0 100% 100%; }
+  }
+  .row { position: relative; z-index: 2; padding: 2*$space 0; }
+  /*.title {
+    h1 { margin-bottom: 1em; }
+  }*/
+
+}
+
+// Section with final btn.
+.section-btn-final {
+  .btn-wrapper {
+    position: absolute; top: 100%; left: 0; width: 100%; z-index: 1; text-align: center;
+  }
+}
+
+// Sections colors.
+.section {
+  &.section-scnd-bkgd-color {
+    .container-wrapper { background-color: $second-background-color; }
+    .container-inner {
+      &:before,
+      &:after { background-color: $second-background-color; }
+    }
+  }
+  &.section-main-bkgd-color {
+    .container-wrapper { background-color: $main-background-color; }
+    .container-inner {
+      &:before,
+      &:after { background-color: $main-background-color; }
+    }
+    color: $fourth-color;
+    h1, h2, h3, h4, h5, h6, p { color: $fourth-color; }
+  }
+  &.section-thrd-bkgd-color {
+    .container-wrapper { background-color: $third-background-color; }
+    .container-inner {
+      &:before,
+      &:after { background-color: $third-background-color; }
+    }
+    color: $fourth-color;
+    h1, h2, h3, h4, h5, h6, p { color: $fourth-color; }
+  }
+  &.section-bottom {
+    .title { text-align: center; }
+  }
+  .btn {
+    box-shadow: 0px (-$global-shadow-size/2) 0 $background-color;
+  }
+}
+// Section highlighted.
+.section-highlighted { text-align: center; }
+
+// Image bottom section.
+.section-visu-bottom-right {
+  .row { }
+  .visu.visu-bottom-right { }
+  .visu-wrapper { }
+  img { display: inline-block; }
+}

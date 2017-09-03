@@ -1,0 +1,19 @@
+@import "../config_desktop";
+
+a.btn { font-size: 1.64em; }
+
+/**
+ * Buttons
+ */
+.btn {
+  width: auto;
+}
+
+.ec-form {
+  .form-actions,
+  .form-item {
+    input.btn {
+      width: auto;
+    }
+  }
+}

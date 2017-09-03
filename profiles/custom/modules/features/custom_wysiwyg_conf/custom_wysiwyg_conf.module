@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Custom | Wysiwyg conf feature.
+ */
+
+include_once 'custom_wysiwyg_conf.features.inc';

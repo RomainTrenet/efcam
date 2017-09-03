@@ -1,0 +1,195 @@
+<?php
+
+function custom_pages_menu() {
+	//$path = drupal_get_path('module', 'custom_pages');
+	return array(
+		'patient' => array(
+			'title' => 'EFCAM - Patient accesses',
+			'page callback' => '_custom_pages_patient_page_view',
+			'access callback' => TRUE,
+			'file' => 'includes/custom_pages_patient_page_view.inc',
+			//'file path' => drupal_get_path('module', 'custom_pages'),
+			'type' => MENU_NORMAL_ITEM,
+			//'menu_name' => 'main-menu',
+			//'weight' => '0',
+		),
+		'patient/edit' => array(
+			'title' => 'Edit',
+			'type' => MENU_LOCAL_ACTION,
+			'context' => MENU_CONTEXT_INLINE,
+			'page callback' => 'drupal_goto',
+			'page arguments' => array('admin/config/efcam/settings/patient/edit'),
+			'access arguments' => array('administer'),
+		),
+		'pro' => array(
+			'title' => 'EFCAM - Qualified accesses',
+			'page callback' => '_custom_pages_pro_page_view',
+			'access callback' => TRUE,
+			'file' => 'includes/custom_pages_pro_page_view.inc',
+			//'file path' => drupal_get_path('module', 'custom_pages'),
+			'type' => MENU_NORMAL_ITEM,
+			//'menu_name' => 'main-menu',
+			//'weight' => '1',
+		),
+		'pro/edit' => array(
+			'title' => 'Edit',
+			'type' => MENU_LOCAL_ACTION,
+			'context' => MENU_CONTEXT_INLINE,
+			'page callback' => 'drupal_goto',
+			'page arguments' => array('admin/config/efcam/settings/pro/edit'),
+			'access arguments' => array('administer'),
+		),
+	);
+}
+
+/**
+ * Implementation of hook_theme()
+ */
+function custom_pages_theme() {
+	$path = drupal_get_path('module', 'custom_pages') .'/theme';
+	return array(
+		'custom_pages_pro_page_theme' => array(
+			'variables' => array('content' => NULL),
+			'template' => 'custom_pages_pro_page_template',
+			'path' => $path,
+		),
+		'custom_pages_patient_page_theme' => array(
+			'variables' => array('section_highlight' => NULL, 'first_section' => NULL, 'second_section' => NULL, 'third_section' => NULL, 'fourth_section' => NULL),
+			'template' => 'custom_pages_patient_page_template',
+			'path' => $path,
+		),
+	);
+}
+
+/**
+ * Implementation of hook_preprocess_page()
+ */
+function custom_pages_preprocess_page(&$vars) {
+	switch (current_path()) {
+		case 'pro' :
+			//Set header variable
+			module_load_include('inc', 'custom_pages', 'includes/custom_pages_default_header_conf');
+			$conf = _custom_pages_pro_page_get_header_conf();
+			//$vars['main_content_header_image'] = file_load(variable_get($conf['module_name'] . '_' . $conf['context'] . '_main_content_header_image'));
+			//$vars['main_content_header_content'] = variable_get($conf['module_name'] . '_' . $conf['context'] . '_main_content_header_content');
+			$image = variable_get($conf['module_name'] . '_' . $conf['context'] . '_main_content_header_image');
+			if (!empty($image)) {
+				$vars['main_content_header_image'] = file_load($image);
+			}
+			
+			//Above header
+			module_load_include('inc', 'custom_pages', 'includes/custom_pages_pro_conf');
+			$above_header_conf = _custom_pages_pro_page_get_above_header_conf();
+			$above_header_vars = array('title', 'subtitle');
+			foreach ($above_header_vars as $key => $above_header_var) {
+				$var = variable_get($above_header_conf['module_name'] . '_' . $above_header_conf['context'] . '_' . $above_header_var);
+				!empty($var) ? $vars['above_main_header_content'][$above_header_var] = _custom_base_get_clean_var_from_wysiwyg($var) : NULL;
+			}
+			
+			//Header CTAs
+			$vars['ctas'] = [
+				0 => [
+					'text' => t('Patient accesses'),
+					'path' => '<front>',
+					'options' => [
+						'attributes' => [
+							'class' => ['link', 'main-link'],
+							'title' => t('Patient accesses'),
+						]
+					],
+				],
+				1 => [
+					'text' => t('Get in touch for the training'),
+					'path' => current_path(),
+					'options' => [
+						'attributes' => [
+							'class' => ['btn', 'scnd-btn'],
+							'title' => t('Get in touch for the training'),
+						],
+						'fragment' => 'section_fourth',
+					],
+				],
+			];
+			break;
+			
+		case 'patient' :
+			//Set header variable
+			module_load_include('inc', 'custom_pages', 'includes/custom_pages_default_header_conf');
+			$conf = _custom_pages_patient_page_get_header_conf();
+			
+			//$vars['main_content_header_image'] = file_load(variable_get($conf['module_name'] . '_' . $conf['context'] . '_main_content_header_image'));
+			//$vars['main_content_header_content'] = variable_get($conf['module_name'] . '_' . $conf['context'] . '_main_content_header_content');
+			$image = variable_get($conf['module_name'] . '_' . $conf['context'] . '_main_content_header_image');
+			if (!empty($image)) {
+					$vars['main_content_header_image'] = file_load($image);
+			}
+			
+			//Above header
+			module_load_include('inc', 'custom_pages', 'includes/custom_pages_patient_conf');
+			$above_header_conf = _custom_pages_patient_page_get_above_header_conf();
+			$above_header_vars = array('title', 'subtitle');
+			foreach ($above_header_vars as $key => $above_header_var) {
+				$var = variable_get($above_header_conf['module_name'] . '_' . $above_header_conf['context'] . '_' . $above_header_var);
+				!empty($var) ? $vars['above_main_header_content'][$above_header_var] = _custom_base_get_clean_var_from_wysiwyg($var) : NULL;
+			}
+			
+			//Header CTAs
+			$vars['ctas'] = [
+				0 => [
+					'text' => t('Qualified accesses'),
+					'path' => 'pro',
+					'options' => [
+						'attributes' => [
+							'class' => ['link', 'main-link'],
+							'title' => t('Qualified accesses'),
+						]
+					],
+				],
+				1 => [
+					'text' => t('Make an appointment'),
+					'path' => '',
+					'options' => [
+						'attributes' => [
+							'class' => ['btn', 'scnd-btn', 'booking',],
+							'title' => t('Make an appointment'),
+						],
+					],
+				],
+			];
+			break;
+		default :
+			// Set default header image.
+			module_load_include('inc', 'custom_pages', 'includes/custom_pages_default_header_conf');
+			$conf = _custom_pages_default_page_get_header_conf();
+			
+			$image = variable_get($conf['module_name'] . '_' . $conf['context'] . '_main_content_header_image');
+			if (!empty($image)) {
+				$vars['main_content_header_image'] = file_load($image);
+			}
+			
+			//Header CTAs
+			$vars['ctas'] = [
+				0 => [
+					'text' => t('Patient accesses'),
+					'path' => '<front>',
+					'options' => [
+						'attributes' => [
+							'class' => ['link', 'main-link'],
+							'title' => t('Patient accesses'),
+						]
+					],
+				],
+				1 => [
+					'text' => t('Qualified accesses'),
+					'path' => 'pro',
+					'options' => [
+						'attributes' => [
+							'class' => ['link', 'main-link'],
+							'title' => t('Qualified accesses'),
+						]
+					],
+				],
+			];
+			break;
+	}
+}

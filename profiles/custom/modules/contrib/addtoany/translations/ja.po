@@ -1,0 +1,28 @@
+# Japanese translation of Share Buttons by AddToAny (7.x-4.12)
+# Copyright (c) 2016 by the Japanese translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Share Buttons by AddToAny (7.x-4.12)\n"
+"POT-Creation-Date: 2016-03-08 23:45+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Content"
+msgstr "コンテンツ"
+msgid "Node types"
+msgstr "ノードタイプ"
+msgid "Link text"
+msgstr "リンクテキスト"
+msgid "Button"
+msgstr "ボタン"
+msgid "Buttons"
+msgstr "ボタン"
+msgid "Icon size"
+msgstr "アイコンサイズ"
+msgid "pixels"
+msgstr "ピクセル"

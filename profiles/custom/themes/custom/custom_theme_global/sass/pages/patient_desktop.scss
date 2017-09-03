@@ -1,0 +1,38 @@
+@import "../config_desktop";
+
+.page-patient {
+  .section-second .row { padding-bottom: 8*$space; }
+  .section-third {margin-top: -145px; margin-bottom: 0;}
+  .section-fourth {
+    margin: -8.5*$space auto 0;
+    padding-top: (8.5*$space + 2*$space);
+    padding-bottom: 9.5*$space;
+  }
+}
+
+.map-wrapper { width: 70%; }
+
+.map-infos {
+  $map-infos-size: 312px;
+  position: absolute; top: 50%; right: 0;
+  height: $map-infos-size; width: $map-infos-size; margin-top: -$map-infos-size/2;
+  background-color: $background-color; border-radius: 50%; padding: $space; display: table;
+  .vcard {
+    display: table-cell; vertical-align: middle; text-align: center;
+    p, a { font-size: 18px; }
+  }
+}
+
+//Large
+@media (min-width: 1200px) {
+  /**
+   * Map infos
+   */
+  .map-infos {
+    $map-infos-size: 352px;
+    height: $map-infos-size; width: $map-infos-size; margin-top: -$map-infos-size/2;
+    .vcard {
+      p, a { font-size: 22px; }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Custom | System conf feature.
+ */
+
+include_once 'custom_system_conf.features.inc';

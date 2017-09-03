@@ -1,0 +1,148 @@
+<?php
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function ef_booking_timeslots_form_booking_timeslots_booking_form_alter(&$form, &$form_state, $form_id) {
+	
+	// Hide unwanted form items.
+	$form_elements_to_hide = [
+		'field_bt_number_of_people',
+		'field_bt_ct_ref_1',
+		'field_bt_ct_ref_2',
+		'field_bt_ct_ref_3',
+		'field_bt_ct_ref_4',
+		'field_bt_user',
+		'book_price',
+		'duration',
+		'slot_time',
+	];
+	foreach ($form_elements_to_hide as $form_element_to_hide) {
+		$form[$form_element_to_hide]['#type'] = 'hidden';
+	}
+	
+	// Add mail input.
+	global $user;
+	/*$form['mail'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Your e-mail address'),
+		'#description' => t('Please enter your e-mail address.'),
+		'#size' => 20,
+		'#maxlength' => 255,
+		'#default_value' => $user->uid ? $user->mail : '',
+		'#attributes' => [
+			'placeholder' => t('E-mail'),
+		],
+		'#required' => TRUE,
+	);*/
+	
+	
+	// Reminder.
+	$date_slot = $form['booking']['#value']->slot_time;
+	$date_ts = strtotime($date_slot);
+	$markup = '<p>Vous effectuez une réservation pour le ';
+	$markup .= format_date($date_ts, $type = 'custom', $format = 'd F Y', $timezone = NULL, $langcode = NULL) . ' à ';
+	$markup .= format_date($date_ts, $type = 'custom', $format = 'H:i', $timezone = NULL, $langcode = NULL) . '.</p>';
+	$form['reminder'] = [
+		'#type' => 'item',
+		'#title' => t('Your appointment'),
+		'#markup' => $markup,
+	];
+	
+	// Submit button.
+	$form['submit']['#value'] = t('To book');
+	
+	// Custom validate function.
+	//$form['#validate'][] = 'ef_booking_timeslots_form_booking_timeslots_booking_form_validate';
+	
+	
+	// Custom submit function.
+	//$form['#submit'][] = 'ef_booking_timeslots_form_booking_timeslots_booking_form_submit';
+	//$form['#submit'] = 'ef_booking_timeslots_form_booking_timeslots_booking_form_custom_submit';
+	//dpm($form);
+}
+
+/*
+function ef_booking_timeslots_form_booking_timeslots_booking_form_validate($form, &$form_state) {
+	if (!valid_email_address($form_state['values']['mail'])) {
+		form_set_error('mail', t('You must enter a valid e-mail address.'));
+	}
+}*/
+/*
+function ef_booking_timeslots_form_booking_timeslots_booking_form_submit($form, &$form_state) {
+	$valid_email = $form_state['values']['mail'];
+	dpm($form_state);
+	dpm('icicicici');
+	$entity = $form_state['values']['booking'];
+	dpm($entity);
+	$entity->email = $form_state['values']['mail'];
+	$booking = booking_timeslots_booking_save($entity);
+	dpm($booking);
+	
+	$from = 'noreply@example.com';
+	$body[] = 'Email: '.$valid_email.'URL: '.request_uri();
+	$to = 'example@example.com'; // Set this email address - emails will be sent to this email address!
+	$params = array(
+		'body' => $body,
+		'subject' => 'Website Information Request',
+	);
+	drupal_set_message($valid_email);
+	drupal_set_message('Okay... ');
+	
+	/*
+	if (drupal_mail('my_form', 'some_mail_key', $to, language_default(), $params, $from, TRUE))
+	{
+		drupal_set_message('Thanks, we will be in contact with more information soon.');
+	} else {
+		drupal_set_message('There was an error subscribing you. Please try again later');
+	}
+	* /
+}*/
+
+/*
+function ef_booking_timeslots_form_booking_timeslots_booking_form_custom_submit($form, &$form_state) {
+	dpm('icicicici');
+	$entity = $form_state['values']['booking'];
+	$entity->email = $form_state['values']['mail'];
+	
+	// The value of players is stored in separate table, so copy the value into entity table as well.
+	$entity->players = $form_state['values']['field_bt_number_of_people']['und'][0]['value'];
+	
+	global $user;
+	$uid = user_access('administer bookings') ? $form_state['values']['field_bt_user'][LANGUAGE_NONE][0]['target_id'] : $user->uid;
+	
+	if (!$entity->uid) {
+		$entity->uid = $uid;
+	}
+	
+	$settings = booking_timeslots_get_configuration();
+	
+	$primary_name                = $settings['ct_name_1'];
+	$secondary_name              = $settings['ct_name_2'];
+	$secondary_to_primary_name   = $settings['ct_field_2_1'];
+	$tertiary_name               = $settings['ct_name_3'];
+	$tertiary_to_secondary_name  = $settings['ct_field_3_2'];
+	$tertiary_to_quaternary_name = $settings['ct_field_3_4'];
+	$tertiary_capacity_name      = $settings['ct_field_3_cap'];
+	
+	$booked_node = node_load($entity->secondary_id ? $entity->secondary_id : $entity->tertiary_id);
+	
+	if ($booked_node->type == $secondary_name) {
+		$field                = $booked_node->$secondary_to_primary_name;
+		$entity->primary_id   = reset($field[LANGUAGE_NONE][0]);
+		$entity->secondary_id = $booked_node->vid;
+	}
+	elseif ($booked_node->type == $tertiary_name) {
+		$field                = $booked_node->$tertiary_to_secondary_name;
+		$fid_node = node_load(reset($field[LANGUAGE_NONE][0]));
+		$field                = $fid_node->$secondary_to_primary_name;
+		$entity->primary_id   = reset($field[LANGUAGE_NONE][0]);
+		$entity->secondary_id = $fid_node->vid;
+		$entity->tertiary_id  = $booked_node->vid;
+	}
+	
+	field_attach_submit('booking', $entity, $form, $form_state);
+	$booking = booking_timeslots_booking_save($entity);
+	$form_state['redirect'] = "booking/$booking->pid";
+}
+*/

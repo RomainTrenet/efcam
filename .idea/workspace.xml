@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="29ff7f32-ef6f-434b-a029-fbb9d60f31bd" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DrupalConfiguration" enabled="true" version="7">
+    <drupalPath>$PROJECT_DIR$</drupalPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="booking_timeslots-6.x-1.2.fr.po" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots-6.x-1.2.fr.po">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="129" column="72" lean-forward="false" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="booking_timeslots.theme.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.theme.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="46" column="63" lean-forward="false" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="63" />
+              <folding>
+                <marker date="1502128612000" expanded="true" signature="14066:14084" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="14085:14156" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="14120:14145" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="14254:14272" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="14273:14344" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="14308:14333" ph="..." />
+                <marker date="1502128612000" expanded="false" signature="16107:16125" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="16126:16291" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="16167:16274" ph="..." />
+                <marker date="1502128612000" expanded="false" signature="17861:17879" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="17880:18090" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="17925:18069" ph="..." />
+                <marker date="1502128612000" expanded="false" signature="18533:18551" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="18552:18723" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="18597:18702" ph="..." />
+                <marker date="1502128612000" expanded="false" signature="22468:22486" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="22487:22690" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="22532:22669" ph="..." />
+                <marker date="1502128612000" expanded="false" signature="22758:22776" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="22777:22963" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="22822:22942" ph="..." />
+                <marker date="1502128612000" expanded="false" signature="23227:23245" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="23246:23417" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="23291:23396" ph="..." />
+                <marker date="1502128612000" expanded="false" signature="23732:23750" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="23751:23954" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="23796:23933" ph="..." />
+                <marker date="1502128612000" expanded="false" signature="24219:24237" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="24238:24409" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="24283:24388" ph="..." />
+                <marker date="1502128612000" expanded="false" signature="26363:26381" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="26382:26826" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="26496:26622" ph="..." />
+                <marker date="1502128612000" expanded="true" signature="26659:26803" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ef_booking_timeslots.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="59" column="89" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="booking_timeslots.booking.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.booking.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="662">
+              <caret line="748" column="17" lean-forward="false" selection-start-line="748" selection-start-column="17" selection-end-line="748" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/templates/system/page.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+              <folding>
+                <element signature="e#3791#3847#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom_base.admin.inc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/custom_base/custom_base.admin.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="264" column="23" lean-forward="true" selection-start-line="264" selection-start-column="23" selection-end-line="264" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom_pages.admin.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/custom_pages.admin.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="35" column="79" lean-forward="true" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ef_booking_timeslots.rules.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.rules.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="booking_timeslots.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11835">
+              <caret line="792" column="50" lean-forward="false" selection-start-line="792" selection-start-column="50" selection-end-line="792" selection-end-column="50" />
+              <folding>
+                <marker date="1502125816000" expanded="true" signature="43388:43461" ph="SELECT slot_... opening_hours" />
+                <marker date="1502125816000" expanded="true" signature="46659:46732" ph="SELECT slot_... opening_hours" />
+                <marker date="1502125816000" expanded="true" signature="59589:59647" ph="SELECT notic... opening_hours" />
+                <marker date="1502125816000" expanded="true" signature="60284:60342" ph="SELECT notic... opening_hours" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar-week.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2235">
+              <caret line="207" column="10" lean-forward="false" selection-start-line="207" selection-start-column="10" selection-end-line="207" selection-end-column="10" />
+              <folding>
+                <element signature="e#1867#3376#0#PHP" expanded="true" />
+                <element signature="e#4601#5102#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>-</find>
+      <find>-fo</find>
+      <find>-form</find>
+      <find>ma</find>
+      <find>mark</find>
+      <find>marku</find>
+      <find>markup</find>
+      <find>date(</find>
+      <find>calendar-agenda-hour</find>
+      <find>Please enter your</find>
+      <find>booking_path</find>
+      <find>booking_timeslots_booking_form_submit</find>
+      <find>d</find>
+      <find>dep</find>
+      <find>deposi</find>
+      <find>deposit</find>
+      <find>'entity_type' =&gt; 'booking'</find>
+      <find>'type' =&gt; 'text'</find>
+      <find>'type' =&gt; 'text</find>
+      <find>'type' =&gt; 'text_</find>
+      <find>ef_booking_timeslots_form_booking_timeslots_booking_form_validate</find>
+      <find>ef_booking_timeslots_form_booking_timeslots_booking_form_submit</find>
+      <find>rule</find>
+      <find>booking_timeslots_form_booking_timeslots_booking_form_submit</find>
+      <find>form_submit</find>
+      <find>highlighted</find>
+      <find>dpm</find>
+      <find>$form_vars_suffix</find>
+      <find>image_var_name'</find>
+      <find>custom_base_generic_section_image_title_body_link_form</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>bts-calndr</replace>
+      <replace>items</replace>
+      <replace>.item</replace>
+      <replace>item</replace>
+      <replace>$slot_attr</replace>
+      <replace>myemail</replace>
+      <replace>booking_email</replace>
+      <replace>$conf['form_vars_suffix']</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass</dir>
+      <dir>$PROJECT_DIR$/profiles/custom/modules/features</dir>
+      <dir>$PROJECT_DIR$/profiles/custom/modules</dir>
+      <dir>$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates</dir>
+      <dir>$PROJECT_DIR$/profiles/custom/themes/custom</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/modules</dir>
+      <dir>$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots</dir>
+      <dir>$PROJECT_DIR$/profiles/custom/modules/custom</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_base/custom_base.module" />
+        <option value="/Applications/MAMP/conf/apache/extra/httpd-vhosts.conf" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/variables/_colors.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/includes/custom_pages_default_header_conf.inc" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_default_content/custom_default_content.install" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/includes/custom_pages_default_reservation_webform.inc" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/includes/custom_pages_default_contact_webform.inc" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/includes/custom_pages_default_booking_webform.inc" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/custom_pages.install" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/templates/user/user-profile.tpl.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/gulpfile.js" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/variables/_vars_desktop.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/header_global.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/layout_desktop.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/form_element_mobile.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/header_desktop.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/global_global.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_layout/theme/custom_layout_header_cta_template.tpl.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/custom_pages.module" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/theme/custom_pages_patient_page_template.tpl.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/form_element_global.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/form_element_desktop.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/contrib/opening_hours/opening_hours.module" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.info" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_desktop/template.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_desktop/preprocess/page.preprocess.inc" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tpl.old.php" />
+        <option value="$PROJECT_DIR$/../api_store/sites/all/themes/apistore/template.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tpl.new.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tplNEW.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-month.tpl.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-day.tpl.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/ef_booking_timeslots.old.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.js" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/ef_booking_timeslots.scss" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.module" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tpl.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.theme.inc" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/template.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/custom.install" />
+        <option value="$PROJECT_DIR$/profiles/custom/custom.info" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots-6.x-1.2.fr.po" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.install" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.rules.inc" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.module" />
+        <option value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/templates/system/page.tpl.php" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_base/custom_base.admin.inc" />
+        <option value="$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/custom_pages.admin.inc" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/node_modules" />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="70" />
+    <option name="y" value="23" />
+    <option name="width" value="1660" />
+    <option name="height" value="1157" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom_base" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom_pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom_pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom_theme_global" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="acupuncture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="acupuncture" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="profiles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom_theme_global" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots" />
+      <recent name="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates" />
+      <recent name="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components" />
+      <recent name="$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global" />
+      <recent name="$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.calendar-week.tpl.php">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration name="calendar-week.tpl.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/acupuncture/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tpl.php" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.calendar-week.tpl.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29ff7f32-ef6f-434b-a029-fbb9d60f31bd" name="Default" comment="" />
+      <created>1498426072017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1498426072017</updated>
+      <workItem from="1498426073201" duration="630000" />
+      <workItem from="1498496428687" duration="4544000" />
+      <workItem from="1498673842393" duration="144000" />
+      <workItem from="1498673997993" duration="440000" />
+      <workItem from="1499187184569" duration="148000" />
+      <workItem from="1499350187121" duration="2076000" />
+      <workItem from="1499691365411" duration="4985000" />
+      <workItem from="1501000796430" duration="5452000" />
+      <workItem from="1501342366189" duration="14422000" />
+      <workItem from="1501938799718" duration="23217000" />
+      <workItem from="1502885264273" duration="306000" />
+      <workItem from="1502893680152" duration="96000" />
+      <workItem from="1503239068771" duration="4000" />
+      <workItem from="1503239158201" duration="8000" />
+      <workItem from="1503253072107" duration="7000" />
+      <workItem from="1503257813194" duration="349000" />
+      <workItem from="1503263233929" duration="1220000" />
+      <workItem from="1504359416641" duration="3296000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="61344000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="70" y="23" width="1660" height="1157" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19159456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27109006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/custom_theme_global.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.views_default.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="295" column="61" lean-forward="true" selection-start-line="295" selection-start-column="61" selection-end-line="295" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_desktop/preprocess/page.preprocess.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="3" lean-forward="false" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="187" column="26" lean-forward="false" selection-start-line="187" selection-start-column="16" selection-end-line="187" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../api_store/sites/all/themes/apistore/scripts/as_global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_desktop/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/ef_booking_timeslots.css" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="736" column="0" lean-forward="false" selection-start-line="736" selection-start-column="0" selection-end-line="736" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tpl.old.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="32" column="2" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/opening_hours_admin.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="9" column="78" lean-forward="false" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tpl--sauv.php" />
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-day.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-month.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="59" column="6" lean-forward="false" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/css/calendar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/form_element_desktop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/_config_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/abstractions/helpers.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="101" column="46" lean-forward="false" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+          <folding>
+            <element signature="e#1867#3376#0#PHP" expanded="true" />
+            <element signature="e#4601#5102#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/ef_booking_timeslots.old.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="113" lean-forward="false" selection-start-line="23" selection-start-column="113" selection-end-line="23" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/global_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.theme.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="504" column="12" lean-forward="false" selection-start-line="504" selection-start-column="12" selection-end-line="504" selection-end-column="12" />
+          <folding>
+            <marker date="1502128612000" expanded="true" signature="14066:14084" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14085:14156" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14120:14145" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14254:14272" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14273:14344" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14308:14333" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="16107:16125" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="16126:16291" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="16167:16274" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="17861:17879" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="17880:18090" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="17925:18069" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="18533:18551" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="18552:18723" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="18597:18702" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="22468:22486" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="22487:22690" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="22532:22669" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="22758:22776" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="22777:22963" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="22822:22942" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="23227:23245" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="23246:23417" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="23291:23396" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="23732:23750" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="23751:23954" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="23796:23933" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="24219:24237" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="24238:24409" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="24283:24388" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="26363:26381" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="26382:26826" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="26496:26622" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="26659:26803" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.theme old.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="516" column="0" lean-forward="false" selection-start-line="516" selection-start-column="0" selection-end-line="516" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/variables/_colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/sass/components/ef_booking_timeslots.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="116" column="185" lean-forward="false" selection-start-line="116" selection-start-column="185" selection-end-line="116" selection-end-column="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../api_store/sites/all/themes/apistore/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="299" column="3" lean-forward="false" selection-start-line="299" selection-start-column="3" selection-end-line="299" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/contrib/opening_hours/opening_hours.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="594" column="104" lean-forward="false" selection-start-line="594" selection-start-column="104" selection-end-line="594" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/custom_base/custom_base.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/custom_base/custom_base.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="154" column="2" lean-forward="true" selection-start-line="154" selection-start-column="2" selection-end-line="154" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="55" column="63" lean-forward="false" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/custom.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/contrib/email/email.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="77" column="6" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="77" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/common.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="1228" column="9" lean-forward="false" selection-start-line="1228" selection-start-column="9" selection-end-line="1228" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots-6.x-1.2.fr.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="129" column="72" lean-forward="false" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/templates/calendar-week.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2235">
+          <caret line="207" column="10" lean-forward="false" selection-start-line="207" selection-start-column="10" selection-end-line="207" selection-end-column="10" />
+          <folding>
+            <element signature="e#1867#3376#0#PHP" expanded="true" />
+            <element signature="e#4601#5102#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/custom.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/custom.profile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.theme.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="46" column="63" lean-forward="false" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="63" />
+          <folding>
+            <marker date="1502128612000" expanded="true" signature="14066:14084" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14085:14156" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14120:14145" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14254:14272" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14273:14344" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="14308:14333" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="16107:16125" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="16126:16291" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="16167:16274" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="17861:17879" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="17880:18090" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="17925:18069" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="18533:18551" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="18552:18723" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="18597:18702" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="22468:22486" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="22487:22690" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="22532:22669" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="22758:22776" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="22777:22963" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="22822:22942" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="23227:23245" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="23246:23417" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="23291:23396" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="23732:23750" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="23751:23954" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="23796:23933" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="24219:24237" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="24238:24409" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="24283:24388" ph="..." />
+            <marker date="1502128612000" expanded="false" signature="26363:26381" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="26382:26826" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="26496:26622" ph="..." />
+            <marker date="1502128612000" expanded="true" signature="26659:26803" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.rules.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/ef_booking_timeslots/ef_booking_timeslots.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="89" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11835">
+          <caret line="792" column="50" lean-forward="false" selection-start-line="792" selection-start-column="50" selection-end-line="792" selection-end-column="50" />
+          <folding>
+            <marker date="1502125816000" expanded="true" signature="43388:43461" ph="SELECT slot_... opening_hours" />
+            <marker date="1502125816000" expanded="true" signature="46659:46732" ph="SELECT slot_... opening_hours" />
+            <marker date="1502125816000" expanded="true" signature="59589:59647" ph="SELECT notic... opening_hours" />
+            <marker date="1502125816000" expanded="true" signature="60284:60342" ph="SELECT notic... opening_hours" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/dev/booking_timeslots/booking_timeslots.booking.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="748" column="17" lean-forward="false" selection-start-line="748" selection-start-column="17" selection-end-line="748" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/theme/custom_pages_pro_page_template.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/theme/custom_pages_patient_page_template.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/themes/custom/custom_theme_global/templates/system/page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+          <folding>
+            <element signature="e#3791#3847#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/custom_pages/custom_pages.admin.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="35" column="79" lean-forward="true" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/custom/modules/custom/custom_base/custom_base.admin.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="264" column="23" lean-forward="true" selection-start-line="264" selection-start-column="23" selection-end-line="264" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

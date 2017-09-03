@@ -1,0 +1,392 @@
+@import "../config_global";
+
+$border : $common-border;
+$padding-lr: 16px;
+$padding-tb: 12px;
+
+/**
+ * Global
+ */
+form { position: relative; }
+
+/**
+ * Links & buttons
+ **/
+a.link {
+  &.main-link { text-decoration: underline; border-bottom: 1px solid $main-color; line-height: 1.1em; }
+}
+
+/**
+ * Buttons
+ */
+.btn {
+  $padding-lr : 40px; $padding-tb : 14px;
+  $percent : 10%;//.rounded($radius);
+  border-radius: $radius; border: $common-border solid; text-decoration: none; display: inline-block; cursor: pointer;
+  padding: $padding-tb $padding-lr; font-size: 1em;
+  &.main-btn {
+    color: $second-color; background-color: $main-background-color; border-color: $main-background-color;
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($second-color, $percent); background-color: darken($main-background-color, $percent); border-color: darken($main-background-color, $percent);
+    }
+  }
+  &.scnd-btn {
+    color: $fifth-color; background-color: $second-background-color; border-color: $second-background-color;
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($fifth-color, $percent); background-color: darken($second-background-color, $percent); border-color: darken($second-background-color, $percent);
+    }
+  }
+  &.third-btn {
+    color: $second-color; background-color: $third-background-color; border-color: $third-background-color;
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($second-color, $percent); background-color: darken($third-background-color, $percent); border-color: darken($third-background-color, $percent);
+    }
+  }
+  &.fourth-btn {
+    color: $main-color; background-color: $background-color; border-color: $main-color;
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($main-color, $percent); background-color: darken($background-color, $percent); border-color: darken($main-color, $percent);
+    }
+  }
+  &.important { text-transform: uppercase; }
+}
+
+/*
+ * Global base for all forms
+ */
+.ec-form {
+  font-size: 1em;
+  .form-item,
+  .form-actions,
+  fieldset.captcha,
+  #account-pass-restrictions,
+  /*h1 {
+    width: 100%; margin: 0 auto 26px; position: relative;
+    .form-item,
+    .form-actions { margin: auto; }
+  }*/
+  .form-item,
+  .form-actions {
+    input,
+    select { width: 100%; }
+  }
+  .form-item,
+  .form-actions {
+    margin-bottom: 3em;
+  }
+  .form-actions.multi-actions {
+    input,
+    select { width: auto; }
+  }
+}
+
+.ec-form .form-item {
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select{
+    color: $fifth-color; font-weight: normal; font-size: 17px; border: $border solid $third-color; background: transparent;
+    padding: $padding-tb $padding-lr; max-width: 100%;
+    //.rounded($radius);
+    border-radius: $radius;
+    &:hover {
+      border-color: lighten($fifth-color, 10%);
+    }
+    &:focus {
+      outline: none;
+      color: $fifth-color; background: $sixth-color; border-color: lighten($fifth-color, 10%);
+    }
+    //TODO
+    /*.placeholder({
+      font-family: robotoregular, sans-serif; font-size: 17px; color: $second-color;
+    });*/
+  }
+}
+
+
+
+/*Labels*/
+.ec-form {
+  .form-item label,
+  fieldset.captcha legend,
+  #account-pass-restrictions h3 { margin-bottom: 15px; padding-left: 30px; font-family: robotoblack, sans-serif; font-size: 1em; }
+}
+
+//Remember me
+.ec-form .form-item-remember-me {
+  input { display:inline-block; width: auto; }
+  label { padding-left: 15px; font-family: robotoregular, sans-serif; font-size: 17px; text-transform: none; }
+}
+
+//Password confirm with level and suggestions
+.ec-form {
+  input.password-confirm,
+  input.password-field { margin-bottom: 0; }
+  div.password-suggestions.description { //to win css war of weight
+    width: auto; border: $border solid $third-color; margin: $space/2 0 0; padding: $space/2;
+  }
+
+  //Level message and password confirmation message
+  #edit-pass-pass1,
+  #edit-pass-pass2 { margin-bottom: $space*3/2; }
+  .password-strength,
+  div.password-confirm { float: none; position: absolute; bottom: $space*1/2; right: 0; margin-top: 0; width: auto; }
+}
+
+//Descriptions
+.ec-form {
+  .description,
+  .item-list ul li {
+    font-size: 1em; margin-top: 5px;
+  }
+  .form-type-radio,
+  .form-type-checkbox {
+    .description { margin-left: 0; }
+  }
+}
+
+//Input type radio
+.ec-form {
+  .form-item {
+    &.form-type-radio {
+      input { width: auto; }
+      label { padding-left: 0; }
+    }
+  }
+}
+
+/*Custom input checkbox*/
+.ec-form .form-item {
+  /* Cachons la case à cocher */
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+  }
+
+  /* on prépare le label */
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    position: relative; display: inline-block;
+    padding-left: 45px;
+    cursor: pointer;
+  }
+
+  /* Aspect des checkboxes */
+  /* :before sert à créer la case à cocher */
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before {
+    $size : 24px;
+    content: ''; position: absolute; left: 0;  top: 50%; width: $size; height: $size; margin-top: -($size/2 + $border);
+    border: $border solid $third-color; background: transparent;
+  }
+
+  /* Aspect général de la coche */
+  [type="checkbox"]:not(:checked) + label:after,
+  [type="checkbox"]:checked + label:after {
+    $size : 20px;
+    content: '✔'; position: absolute; top: 50%; left: 7px; margin-top: -$size/2;
+    font-size: $size; line-height: 1; line-height: 1; color: $third-color;
+  }
+  /* Aspect si "pas cochée" */
+  [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0; /* coche invisible */
+    transform: scale(0); /* mise à l'échelle à 0 */
+  }
+  /* Aspect si "cochée" */
+  [type="checkbox"]:checked + label:after {
+    opacity: 1; /* coche opaque */
+    transform: scale(1); /* mise à l'échelle 1:1 */
+  }
+}
+
+/*Captcha*/
+.ec-form fieldset {
+  &.captcha {
+    border: none; padding: 0;
+    .fieldset-wrapper {
+      border: $border solid $second-color; background: $main-background-color; //.rounded($radius);
+      border-radius: $radius;
+      padding: ($padding-lr - $border - 2px) ($padding-lr - $border);
+    }
+    .form-item-captcha-response {
+      margin-top: $space;
+      label { padding-left: 0; }
+      input { background-color: $third-color; }
+    }
+  }
+}
+
+/*Textarea grippie*/
+.ec-form .webform-component-textarea .grippie { background: none; display: none; }
+
+// Contact file
+.ec-form #edit-submitted-contact-cv-file-ajax-wrapper {
+  .webform-component-file > label { float: left; padding: $padding-tb 0;  }
+  .form-managed-file > label { margin: 0; }
+}
+
+/*
+ * Error
+ */
+.ec-form .form-item {
+  input,
+  textarea,
+  select {
+    &.error {
+      color: $error-color;
+      border-color: $error-color;
+    }
+  }
+}
+
+#edit-picture {
+  .user-picture {
+    float: left; width: 30%; padding-right: $space/2;
+    img { width: 100%; }
+  }
+  .form-item-picture-delete {
+    float: left; width: 70%; padding-left: $space/2;
+    label,
+    .description { margin-left: 0; }
+  }
+  .form-item-files-picture-upload {
+    float: left; width: 100%; margin-top: $space/2;
+  }
+}
+
+// Input file
+
+.js .ec-inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.ec-inputfile + label,
+.form-managed-file span.file {
+  max-width: 80%;
+  font-size: 1.25rem;
+  /* 20px */
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+  /* 10px 20px */
+}
+
+.no-js .ec-inputfile + label {
+  display: none;
+}
+
+.ec-inputfile:focus + label,
+.ec-inputfile.has-focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.ec-inputfile + label * {
+  /* pointer-events: none; */
+  /* in case of FastClick lib use */
+}
+
+.ec-inputfile + label svg,
+.form-managed-file span.file .file-icon{
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  /* 4px */
+  margin-right: 0.25em;
+  /* 4px */
+}
+
+
+/* style 1 */
+
+.ec-inputfile-1 + label,
+.form-managed-file span.file{
+  color: $main-color;
+  background-color: $third-color;
+}
+
+.ec-inputfile-1:focus + label,
+.ec-inputfile-1.has-focus + label,
+.ec-inputfile-1 + label:hover {
+  //background-color: $prim-hov-color;
+  background-color: darken($third-color, 10%);
+}
+
+/**
+ * Form generic breadcrumb
+ * Seen for example in user/register
+ */
+.wizard-trail {
+  $part-width: 220px; $chip-size: 20px; $border-size: 3px; $chip-main-color: fade($third-color, 50%);
+  width: 100%; font-size: 0;
+  //Global for each chip
+  > span {
+    display: inline-block; color: $chip-main-color; position: relative; font-size: 20px; text-transform: uppercase;
+    font-family: robotoregular, sans-serif;
+    &:before {
+      position: absolute; display: inline-block; content: ''; background-color: $chip-main-color;
+    }
+    &:after {
+      position: absolute; display: inline-block; content: ''; background-color: transparent; //.rounded(50%);//TODO
+    }
+    &:first-child:before { display: none; }
+  }
+  //Current chip
+  .wizard-trail-current {
+    font-weight: normal; color: $third-color;
+    &:before { background-color: $third-color; }
+    &:after{ background-color: $third-color; border-color: $third-color; }
+  }
+  //Previous chip
+  .wizard-trail-previous {
+    color: $third-color;
+    &:before { background-color: $third-color; }
+    &:after{ border-color: $third-color; }
+  }
+}
+
+//Help span (used for example in user/register
+.help {
+  $help-size : 40px;
+  display: inline-block; position: absolute; top: 39px; left: 100%; margin: 0 0 0 $space/2;
+  height: $help-size; width: $help-size; /*.rounded(50%);*/ overflow: hidden; cursor: pointer;//TODO
+  background-color: $second-color;
+  &:after {
+    font-family: robotoregular, sans-serif;
+    display: block; content: '?'; position: absolute; width: 100%; height: 100%;
+    color: $third-color;  text-align: center; font-size: 24px; line-height: $help-size;
+  }
+  &:hover,
+  &:active,
+  &:focus { background-color: $third-color; }
+}
+
+//No fieldset
+fieldset.ec-no-fieldset {
+  margin: auto; padding: 0; border: none;
+  legend { margin-bottom: 10px; }
+  span.fieldset-legend {
+    font-family: robotoblack, Sans-serif;
+  }
+}

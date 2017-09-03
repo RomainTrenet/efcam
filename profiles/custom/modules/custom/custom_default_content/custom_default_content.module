@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * Add default image from module.
+ * Image fid value will be available as :
+ * variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+ *
+ * @param $destination_directory
+ * @param $default_file
+ * @param $target_file_name
+ * @return bool|stdClass
+ */
+function _custom_default_content_add_default_file($conf)
+{
+	//Prepare directory, if it doesnt exist
+	$destination_directory = file_default_scheme().'://'.$conf['image']['destitation_folder'];
+	file_prepare_directory($destination_directory, FILE_CREATE_DIRECTORY);
+	
+	//Open original file
+	$default_file = drupal_get_path('module', $conf['module_name']) . '/' . $conf['image']['source_folder'] . '/' . $conf['image']['file_name'];
+	$handle = fopen($default_file, 'r');
+	
+	//Create new drupal file
+	$file = file_save_data($handle, $destination_directory . '/' . $conf['image']['file_name']);
+	$file->status = FILE_STATUS_PERMANENT;
+	
+	//TODO SET ALT and TITLE
+	//TODO attach files
+	$file->field_file_image_alt_text = $conf['image']['alt'];
+	$file->field_file_image_title_text = $conf['image']['title'];
+	$file->alt = t('This is the alt text');
+	$file->title = t('This is the title text');
+	
+	//Close original file and return new fil object
+	fclose($handle);
+	
+	//Record variable
+	//variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+	
+	//Return file
+	return $file;
+}

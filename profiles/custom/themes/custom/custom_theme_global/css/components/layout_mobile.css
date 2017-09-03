@@ -1,0 +1,180 @@
+/*
+ * COLORS
+ */
+/*
+$prim-color : #3de6a8;
+$prim-hov-color : #3dffa8;
+$error-color : #ff5363;
+
+$variant_first : #8995b6;
+$variant_second : #657192;
+*/
+/*
+ * Vars
+ */
+/*
+ * Vars
+ */
+/**
+ * Header
+ */
+.l-page {
+  padding-top: 200px; }
+
+body.admin-menu #header {
+  top: 47px !important; }
+
+#header {
+  height: 200px; }
+
+#header .table {
+  height: 200px; }
+
+.slicknav_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+/**
+ *  Default Main content Header
+ */
+.ec-content-header {
+  height: 444px; }
+
+/**
+ * Disc header
+ */
+.l-content-header {
+  margin-bottom: 40px; }
+
+.l-content-header .ec-above-header {
+  margin-bottom: 150px; }
+
+.l-content-header .ec-above-header-inner {
+  bottom: -150px; }
+
+.l-content-header .bkgd img {
+  max-height: 100%; }
+
+.ec-disc .disc-wrapper {
+  height: 452px;
+  width: 452px;
+  border-width: 16px; }
+
+.ec-disc h1 {
+  font-size: 2.6em; }
+
+.ec-disc h2 {
+  font-size: 1.2em; }
+
+.ec-disc span.icon {
+  font-size: 44px;
+  bottom: 40px; }
+
+/**
+ * Sections styles
+ */
+.section {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+.section:last-child {
+  margin-bottom: 0; }
+
+.section .visu,
+.section .visus {
+  margin-bottom: 40px; }
+
+.section.section-visus-cosmic .visus-cosmic .visus-inner {
+  padding-bottom: 80px;
+  position: relative; }
+
+.section.section-visus-cosmic .visus-cosmic .visu.first {
+  z-index: 1;
+  text-align: left; }
+
+.section.section-visus-cosmic .visus-cosmic .visu.second {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.section.section-visus-cosmic-2 .visus-cosmic .visus-inner {
+  padding-top: 80px;
+  position: relative; }
+
+.section.section-visus-cosmic-2 .visus-cosmic .visu.first {
+  z-index: 1;
+  text-align: left; }
+
+.section.section-visus-cosmic-2 .visus-cosmic .visu.second {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.section-curve {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.section-curve .container-inner:before, .section-curve .container-inner:after {
+  left: -50%;
+  width: 200%;
+  height: 140px; }
+
+.section-curve .container-inner:before {
+  margin-bottom: -120px; }
+
+.section-curve .container-inner:after {
+  margin-top: -120px; }
+
+.section-btn-final {
+  padding-bottom: 80px; }
+
+.section-visu-bottom-right {
+  margin-bottom: -80px; }
+
+.section-visu-bottom-right .visu.visu-bottom-right {
+  padding-top: 40px;
+  margin-bottom: -30px; }
+
+.section-visu-bottom-right .visu-wrapper {
+  text-align: right; }
+
+@media (max-width: 767px) {
+  /**
+   * Header layout
+   */
+  /**
+   *  Default Main content Header
+   */
+  .ec-content-header {
+    height: 220px; }
+  /**
+   * Disc header
+   */
+  .ec-disc .disc-wrapper {
+    height: 280px;
+    width: 280px;
+    border-width: 8px; }
+  .ec-disc h1 {
+    font-size: 1.8em; }
+  .ec-disc h2 {
+    font-size: 1em; }
+  .ec-disc span.icon {
+    font-size: 22px;
+    bottom: 20px; }
+  /**
+   * Sections styles
+   */
+  .section .visus-cosmic .visu.second {
+    width: 50%; } }
+
+@media (min-width: 768px) {
+  .l-page {
+    padding-top: 185px; }
+  #header {
+    height: 185px; }
+  #header .table {
+    height: 185px; } }

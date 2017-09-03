@@ -1,0 +1,12 @@
+name = API Store Admin Theme
+description = Custom admin themes for API Store
+version = 1.0
+core = 7.x
+engine = phptemplate
+base theme = adminimal
+
+; CSS
+stylesheets[all][] = css/api_store_admin.css
+
+; JS
+;scripts[] = js/script.js

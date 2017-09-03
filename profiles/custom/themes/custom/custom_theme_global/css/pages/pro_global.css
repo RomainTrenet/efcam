@@ -1,0 +1,19 @@
+/*
+ * COLORS
+ */
+/*
+$prim-color : #3de6a8;
+$prim-hov-color : #3dffa8;
+$error-color : #ff5363;
+
+$variant_first : #8995b6;
+$variant_second : #657192;
+*/
+/*
+ * Vars
+ */
+.ec-disc .disc-wrapper {
+  background: #24AED5 url("../../images/tao_en_reflet.png") no-repeat; }
+
+.section-fourth .infos {
+  text-align: center; }

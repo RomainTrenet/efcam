@@ -1,0 +1,160 @@
+<?php
+
+/**
+ * Implement hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ */
+function custom_install() {
+  include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install';
+  minimal_install();
+
+  // Change site name
+  //variable_set('site_name', 'Custom site');
+
+  // Allow visitor account creation with administrative approval.
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+
+  // Enable usefull theme.
+  db_update('system')
+      ->fields(array('status' => 1))
+      ->condition('type', 'theme')
+      ->condition('name', array('adminimal', 'omega', 'custom_theme_admin', 'custom_theme_desktop', 'custom_theme_mobile'), 'IN')
+      ->execute();
+  variable_set('admin_theme', 'custom_theme_admin');
+  variable_set('node_admin_theme', '1');
+  variable_set('theme_default', 'custom_theme_desktop');
+
+  // Disable unusefull theme.
+  db_update('system')
+      ->fields(array('status' => 0))
+      ->condition('type', 'theme')
+      ->condition('name', array('bartik'), 'IN')
+      ->execute();
+	
+  //Admin role
+	/*$admin_role = new stdClass();
+	$admin_role->name = 'administrator';
+	$admin_role->weight = 10;
+	user_role_save($admin_role);
+	user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
+	// Set this as the administrator role.
+	variable_set('user_admin_role', $admin_role->rid);
+	
+	// Assign user 1 the "administrator" role.
+	db_insert('users_roles')
+		->fields(array('uid' => 1, 'rid' => $admin_role->rid))
+		->execute();
+	// Update the menu router information.
+	menu_rebuild();
+	
+	// revert features to ensure they are all installed
+	$features = array(
+		'api_store_basic_page_content_type',
+		'api_store_features_conf',
+		'api_store_media_conf',
+		'api_store_system_conf',
+		'api_store_themes_configuration',
+		'api_store_wysiwyg_conf'
+	);
+	features_revert($features);*/
+	
+	/*$menu_name = 'main-menu';
+	
+	// Create menu if doesn't exist.
+	if (!menu_load($menu_name)) {
+		$menu = array(
+			'menu_name' => $menu_name,
+			'title' => t('Main menu'),
+			'description' => 'Main menu',
+		);
+		menu_save($menu);
+	}*/
+
+  // Rebuild permission to avoid drupal error message
+  node_access_rebuild();
+}
+
+/**
+ * Enable module addressfield.
+ */
+function custom_update_7101(&$sandbox) {
+	if (!module_exists('addressfield')) {
+		module_enable(array('addressfield'), TRUE);
+	}
+}
+
+/**
+ * Enable first features.
+ */
+function custom_update_7102(&$sandbox) {
+	$modules = array('custom_features_conf', 'custom_media_conf', 'custom_system_conf', 'custom_themes_configuration', 'custom_wysiwyg_conf');
+	foreach ($modules as $key => $module) {
+		if (!module_exists($module)) {
+			module_enable(array($module), TRUE);
+		}
+	}
+}
+
+/**
+ * Enable module simple_gmap.
+ */
+function custom_update_7103(&$sandbox) {
+	if (!module_exists('simple_gmap')) {
+		module_enable(array('simple_gmap'), TRUE);
+	}
+}
+
+/**
+ * Enable fancybox module.
+ */
+function custom_update_7104(&$sandbox) {
+	$modules = array('fancybox');
+	foreach ($modules as $key => $module) {
+		if (!module_exists($module)) {
+			module_enable(array($module), TRUE);
+		}
+	}
+}
+
+/**
+ * Enable webform modules.
+ */
+function custom_update_7105(&$sandbox) {
+	$modules = array('webform', 'webform_phone');
+	foreach ($modules as $key => $module) {
+		if (!module_exists($module)) {
+			module_enable(array($module), TRUE);
+		}
+	}
+}
+
+/**
+ * Enable custom_manager & custom_rights.
+ */
+function custom_update_7106(&$sandbox) {
+	$modules = array('custom_manager', 'custom_rights');
+	foreach ($modules as $key => $module) {
+		module_enable(array($module), TRUE);
+	}
+}
+
+/**
+ * Enable page_theme module.
+ */
+function custom_update_7108(&$sandbox) {
+	$modules = array('page_theme');
+	foreach ($modules as $key => $module) {
+		module_enable(array($module), TRUE);
+	}
+}
+
+/**
+ * Enable ef_booking_timeslots module.
+ */
+function custom_update_7109(&$sandbox) {
+	$modules = array('ef_booking_timeslots');
+	foreach ($modules as $key => $module) {
+		module_enable(array($module), TRUE);
+	}
+}

@@ -1,0 +1,8 @@
+name = Custom | Layout
+description = This module is used to set the layout, like header, footer
+package = Custom
+core = 7.x
+version = "7.x-1.0"
+
+;dependencies[] = block
+;dependencies[] = menu

@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * Add newcol field to {mytable1} table.
+ */
+function ef_booking_timeslots_update_7101() {
+	/*$spec = array(
+		//'type' => 'varchar',
+		'type' => 'text',
+		'description' => "E-mail",
+		//'length' => 100,
+		'not null' => FALSE,
+	);
+	db_add_field('booking', 'email', $spec);*/
+	
+	
+	// Check if our field is not already created.
+	if (!field_info_field('booking_email')) {
+		$field = array(
+			'field_name' => 'booking_email',
+			'type' => 'text',
+			/*'locked' => TRUE, // Settings can not be changed
+			'settings' => array(
+				'no_ui' => TRUE, // Field is not visible in field UI and can only be instantiated programmatically.
+			),*/
+			'description' => "Booking user E-mail",
+			'not null' => FALSE,
+		);
+		field_create_field($field);
+		
+		// Create the instance on the bundle.
+		$instance = array(
+			'field_name' => 'booking_email',
+			'entity_type' => 'booking',
+			'bundle' => 'booking', // If your entity does not have bundles, this is the same as the entity type.
+			'label' => 'Email',
+			'required' => TRUE, // Field must have a value.
+			'widget' => array(
+				'type' => 'text_textfield',
+			),
+		);
+		field_create_instance($instance);
+	}
+}

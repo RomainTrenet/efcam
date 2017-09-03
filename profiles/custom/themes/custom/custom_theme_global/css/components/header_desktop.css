@@ -1,0 +1,35 @@
+/*
+ * COLORS
+ */
+/*
+$prim-color : #3de6a8;
+$prim-hov-color : #3dffa8;
+$error-color : #ff5363;
+
+$variant_first : #8995b6;
+$variant_second : #657192;
+*/
+/*
+ * Vars
+ */
+/*
+ * Vars
+ */
+/**
+ *  Default Main content Header
+ */
+.ec-content-header {
+  height: 444px; }
+
+/**
+ * CTAs
+ */
+#header .ctas li {
+  margin-left: 100px;
+  font-size: 14px; }
+
+#header .ctas li:first-child {
+  margin-left: 0; }
+
+#header .ctas a {
+  font-size: 1.15em; }

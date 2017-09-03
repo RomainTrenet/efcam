@@ -1,0 +1,107 @@
+name = Custom Theme Desktop
+description = Copy this subtheme to get started - see the <b><a href="http://adaptivethemes.com/documentation/adaptivethemes-documentation" target="_blank" title="Adaptivethemes.com - Rocking the hardest since 2006">documentation</a></b> for guidence or the included README. Drush users can generate a new theme using the command: drush adaptivetheme. If you need help please use the <b><a href="http://drupal.org/project/issues/adaptivetheme" target="_blank">issue queue</a></b> or ask in the IRC channel: <b><a href="irc://irc.freenode.net/drupal-adaptivetheme">#drupal-adaptivetheme</a></b>.
+core = 7.x
+base theme = custom_theme_global
+release = 7.x-3.x
+engine = phptemplate
+screenshot = screenshot.png
+
+; ========================================
+; Regions
+; ========================================
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[content] = Main Content
+regions[highlighted] = Highlighted
+regions[content_aside] = Aside
+regions[secondary_content] = Secondary
+regions[tertiary_content] = Tertiary
+regions[footer] = Footer
+regions[leaderboard] = Leaderboard
+regions[header] = Header
+regions[menu_bar] = Menu Bar
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+; ========================================
+; Features
+; ========================================
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+version = 7.x-3.4
+datestamp = 1468404543
+
+; ========================================
+; Settings
+; ========================================
+settings[toggle_logo] = 1
+settings[toggle_name] = 1
+settings[toggle_slogan] = 1
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_main_menu] = 1
+settings[toggle_secondary_menu] = 1
+settings[omega_toggle_front_page_content] = 1
+settings[default_logo] = 1
+settings[logo_path] = ""
+settings[logo_upload] = ""
+settings[default_favicon] = 1
+settings[favicon_path] = ""
+settings[favicon_upload] = ""
+settings[omega_enable_warning] = 1
+settings[omega_toggle_extension_layouts] = 0
+settings[omega_layout] = ""
+settings[omega_toggle_extension_development] = 0
+settings[omega_enable_export_reminder] = 1
+settings[omega_rebuild_theme_registry] = 0
+settings[omega_rebuild_aggregates] = 1
+settings[omega_browser_width_indicator] = 0
+settings[omega_livereload] = 0
+settings[omega_livereload_script] = http://localhost:35729/livereload.js
+settings[omega_livereload_host] = localhost
+settings[omega_livereload_port] = 35729
+settings[omega_demo_regions] = 0
+settings[omega_demo_regions_list][sidebar_first] = sidebar_first
+settings[omega_demo_regions_list][sidebar_second] = sidebar_second
+settings[omega_demo_regions_list][content] = content
+settings[omega_demo_regions_list][highlighted] = highlighted
+settings[omega_demo_regions_list][content_aside] = content_aside
+settings[omega_demo_regions_list][secondary_content] = secondary_content
+settings[omega_demo_regions_list][tertiary_content] = tertiary_content
+settings[omega_demo_regions_list][footer] = footer
+settings[omega_demo_regions_list][leaderboard] = leaderboard
+settings[omega_demo_regions_list][header] = header
+settings[omega_demo_regions_list][menu_bar] = menu_bar
+settings[omega_demo_regions_list][help] = help
+settings[omega_toggle_extension_compatibility] = 1
+settings[omega_conditional_classes_html] = 1
+settings[omega_apple_touch] = 1
+settings[omega_cleartype] = 1
+settings[omega_handheld_friendly] = 1
+settings[omega_mobile_optimized] = 1
+settings[omega_viewport] = 1
+settings[omega_viewport_initial_scale] = _default
+settings[omega_viewport_user_scaleable] = 1
+settings[omega_viewport_minimum_scale] = _default
+settings[omega_viewport_maximum_scale] = _default
+settings[omega_chrome_edge] = 1
+settings[omega_internet_explorer_support] = _none
+settings[omega_toggle_extension_assets] = 1
+settings[omega_libraries][selectivizr][status] = 0
+settings[omega_libraries][selectivizr][variant] = _default
+settings[omega_libraries][respond][status] = 0
+settings[omega_libraries][respond][variant] = _default
+settings[omega_libraries][pie][status] = 0
+settings[omega_libraries][pie][variant] = _default
+settings[omega_libraries][html5shiv][status] = 0
+settings[omega_libraries][html5shiv][variant] = _default

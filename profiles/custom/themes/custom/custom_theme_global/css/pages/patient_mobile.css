@@ -1,0 +1,31 @@
+/*
+ * COLORS
+ */
+/*
+$prim-color : #3de6a8;
+$prim-hov-color : #3dffa8;
+$error-color : #ff5363;
+
+$variant_first : #8995b6;
+$variant_second : #657192;
+*/
+/*
+ * Vars
+ */
+/*
+ * Vars
+ */
+.page-patient .section-third {
+  margin-bottom: 0; }
+
+.page-patient .section-fourth {
+  margin: -40px auto 0;
+  padding-top: 80px;
+  padding-bottom: 40px; }
+
+.map-infos {
+  padding: 10px;
+  margin-bottom: 20px; }
+
+.section-fourth .infos {
+  padding-top: 40px; }

@@ -1,0 +1,28 @@
+@import "../config_desktop";
+
+.ec-disc {
+  h1 {
+    font-size: 3.1em;
+  }
+}
+
+/**
+ * Section highlighted
+ */
+.section-highlighted {
+  .infos {
+    //h1 { margin-bottom: 1em; font-family: 'robotoslabbold', Helvetica, Sans-Serif; font-size: 2.8em; }
+    p { font-family: 'robotoslabregular', Helvetica, Sans-Serif; font-size: 2.2em; color: $seventh-color;}
+    //.btn { margin-top: 1em; }
+  }
+}
+
+.section-second {
+  margin-top: -6*$space; margin-bottom: -10*$space;
+  .btn-wrapper { margin-top: $space; }
+}
+
+.section-fourth {
+  padding-top: 2*$space; padding-bottom: 2*$space;
+  .infos { text-align: center; }
+}

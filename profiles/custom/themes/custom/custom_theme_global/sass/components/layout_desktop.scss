@@ -1,0 +1,132 @@
+@import "../config_desktop";
+
+/**
+ * Header
+ */
+.l-page { padding-top: $menu_height_small; }
+#header {
+  height: $menu_height_small;
+  .table {
+    height: $menu_height_small;
+  }
+}
+body.admin-menu {
+  #header {
+    margin-top: $slicknav-menu-height;
+  }
+}
+
+//Default behavior with bootstrap grid
+.container-fluid {
+  .container-inner { max-width: $max-width; margin: 0 auto; }
+  .col { padding-top: $space; padding-bottom: $space; }
+}
+
+/**
+ * Disc header
+ */
+.l-content-header {
+  margin-bottom: 2*$space;
+  .ec-content-header { }
+  $disc-offset : 150px;
+  .ec-above-header { margin-bottom: $disc-offset; }
+  .ec-above-header-inner { bottom: -$disc-offset; }
+}
+.ec-disc {
+  $disc-border: 16px; $disc-height: 420px + 2*$disc-border;
+  .disc-wrapper { height: $disc-height; width: $disc-height; border-width: $disc-border; }
+  .disc-inner { }
+  h1 { font-size: 2.6em; }
+  h2 { font-size: 1.3em; }
+  span.icon { font-size:44px; bottom: 2*$space; }
+}
+
+/**
+ * Sections styles
+ */
+.section {
+  margin-top: 2*$space; margin-bottom: 2*$space;
+  &:last-child { margin-bottom: 0; }
+  &.section-visus-cosmic {
+    padding-top: 8*$space; padding-bottom: 8.5*$space;
+    .row { position: relative; }
+    .visus-cosmic {
+      $first-image-size : 512px;
+      $second-image-size : 308px;
+      position: absolute; top: 50%; left: 0;
+      .visus-inner { margin: -$first-image-size/2 auto 7*$space; position: relative; }
+      .visu {
+        &.first {
+          img { height: $first-image-size; width: auto; }
+        }
+        &.second {
+          position: absolute; right: -$space; bottom: -4*$space;
+          img { height: $second-image-size; width: auto; }
+        }
+      }
+    }
+  }
+  &.section-visus-cosmic-2 {
+    padding-top: 8*$space; padding-bottom: 8.5*$space;
+    .title,
+    .infos { margin-right: 20%; } // Push infos and btn to the bottom.
+    .row { position: relative; }
+    .visus-cosmic {
+      $first-image-size : 512px;
+      $second-image-size : 308px;
+      position: absolute; top: 50%; right: 0;
+      .visus-inner { margin: -$first-image-size/2 auto 7*$space; position: relative; }
+      .visu {
+        &.first {
+          img { height: $first-image-size; width: auto; }
+        }
+        &.second {
+          position: absolute; right: -$space; top: -4*$space;
+          img { height: $second-image-size; width: auto; }
+        }
+      }
+    }
+  }
+  &.section-visu-centered {
+    padding-top: 8*$space; padding-bottom: 7*$space;
+    .row { position: relative; }
+    .visu-centered {
+      $image-size : 512px;
+      position: absolute; top: 50%; left: 0;
+      .visu-inner { margin: -$image-size/2 auto 7*$space; position: relative; }
+      .visu {
+        img { height: $image-size; width: auto; }
+      }
+    }
+  }
+}
+
+
+//Section with curves
+.section-curve {
+  padding-top: 2*$space; padding-bottom: 2*$space;
+  .container-inner {
+    &:before,
+    &:after { left: -20%; width: 140%; height: 7*$space; }
+    &:before { margin-bottom: -5*$space; }
+    &:after { margin-top: -5*$space; }
+  }
+  .title {
+    padding-left: 0;
+  }
+}
+
+//Section with final btn
+.section-btn-final { padding-bottom: 4*$space; }
+
+//Section highlighted
+.section-highlighted { margin-bottom: 110px; }
+
+//Image bottom section
+.section-visu-bottom-right {
+  margin-bottom: 0;
+  .row { position: relative; padding-bottom: 6*$space; }
+  .visu.visu-bottom-right { position: absolute; height: 100%; right: 0; top: 0; }
+  .visu-wrapper { position: absolute; right: -$space; bottom: 0; }
+  img { display: block; }
+}

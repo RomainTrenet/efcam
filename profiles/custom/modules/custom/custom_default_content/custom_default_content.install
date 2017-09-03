@@ -1,0 +1,278 @@
+<?php
+
+/**
+ * @file
+ * Default contents for custom profile.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function custom_default_content_install() {
+	drupal_set_installed_schema_version('custom_default', '7100');
+	
+	//Pro page and patient page header
+	module_load_include('inc', 'custom_pages', 'includes/custom_pages_default_header_conf');
+	
+	//Custom patient page
+	$conf = _custom_pages_patient_page_get_header_conf();
+	//Add default image
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+	
+	
+	//Custom pro page
+	$conf = _custom_pages_pro_page_get_header_conf();
+	//Add default image
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+}
+
+/**
+ * Create default header for 'patient' and 'pro' page
+ */
+function custom_default_content_update_7101(&$sandbox) {
+	//Pro page and patient page header
+	module_load_include('inc', 'custom_pages', 'includes/custom_pages_default_header_conf');
+	
+	//Custom patient page
+	$conf = _custom_pages_patient_page_get_header_conf();
+	//Add default image
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+	
+	//Custom pro page
+	$conf = _custom_pages_pro_page_get_header_conf();
+	//Add default image
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+}
+
+/**
+ * Create default address and contact address mail
+ */
+function custom_default_content_update_7102(&$sandbox)
+{
+	variable_set('efcam_settings_contact_email_address', 'contact@efcam.fr');
+	variable_set('efcam_settings_address', array(
+		'thoroughfare' => '6, rue Antoine Bourdel',
+		'premise' => '',
+		'locality' => 'Paris',
+		'administrative_area' => '',
+		'postal_code' => '75015',
+		'country' => 'FR',
+	));
+}
+
+/**
+ * Create default patient highlight section content
+ */
+function custom_default_content_update_7103(&$sandbox) {
+	variable_set('custom_pages_patient_page_highlight_section_title', 'André MICHEL et ses collaborateurs');
+	variable_set('custom_pages_patient_page_highlight_section_body', '<p>Nous vous recevons tous les jours (7/7j) pour des séances faisant appel à des techniques inspirées d’une tradition millénaire (2500 ans).<br />
+A toutes les personnes qui souhaitent faire appel à ces méthodes manuelles traditionnelles, qui ont largement  fait venir à bout des petits mots et grands maux du quotidien.</p><p>Moi même Ostéopathe-Acupuncteur à Paris depuis plus de 35 ans, je transmets mes compétences et mes expériences à mes collaborateurs.</p>');
+	variable_set('custom_pages_patient_page_highlight_section_link_title', 'Découvrir les thérapies traditionelles manuelles');
+}
+
+/**
+ * Create default patient above header content
+ */
+function custom_default_content_update_7104(&$sandbox) {
+	variable_set('custom_pages_patient_page_above_header_title', '<p>Prendre soin de soi,<br/>même<br/>dans l’urgence</p>');
+	variable_set('custom_pages_patient_page_above_header_subtitle', '<p>Urgence Ostéopathie et Acupuncture<br> 7 jours sur 7. </p>');
+}
+
+/**
+ * Create default patient first section content
+ */
+function custom_default_content_update_7105(&$sandbox) {
+	variable_set('custom_pages_patient_page_first_section_title', 'Les Thérapies<br/>Traditionnelles Manuelles');
+	variable_set('custom_pages_patient_page_first_section_body', '<h2>Ostéopathie traditionnelle</h2>
+        <p>Cette technique, connue de nos ancêtres consiste simplement à redonner de la mobilité à nos articulations, des vertèbres ou des membres.</p>
+        <h2>Massage traditionnel chinois</h2>
+        <p>Il est fait de glissés sur les lignes énergétiques, de pressions sur les points d’acupuncture et de tractions cutanées.</p>
+        <h2>Ventouses</h2>
+        <p>c’est une méthode de décompression sur les zones fatiguées utilisée entre autre par nos plus grands sportifs (Michael Phelps aux jeux olympiques de 2016)</p>
+        <h2>Acupuncture</h2>
+        <p>Cette thérapie utilisé par un milliard de chinois prouve par ce chiffre à lui seul, son efficacité. Aujourd’hui les aimants ou le laser peut remplacer les aiguilles.</p>');
+	variable_set('custom_pages_patient_page_first_section_link_title', 'Prendre rendez-vous');
+	
+	//Image
+	module_load_include('inc', 'custom_pages', 'includes/custom_pages_patient_conf');
+	$conf = _custom_pages_patient_page_get_first_section_image_conf();
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+}
+
+/**
+ * Create default patient content for second, third and fourth section
+ */
+function custom_default_content_update_7106(&$sandbox) {
+	//
+	module_load_include('inc', 'custom_pages', 'includes/custom_pages_pro_conf');
+	
+	/**
+	 * Second section
+	 */
+	variable_set('custom_pages_patient_page_second_section_title', 'Le déroulé d’une séance');
+	variable_set('custom_pages_patient_page_second_section_body', '<p>Une séance d’ostéopathie, acupuncture, ventouse, massage dure environ une heure.
+            Elle débute par des bilans.</p>
+          <p>Questionnement : objet de la consultation</p>
+          <p>Palpation :<br />
+            - Ostéopathique : analyse de chaque articulation<br />
+            - Musculaire : états des zones douloureuses, chaudes, froides<br />
+            - Energétique : palpation des pouls artériels<br />
+          </p>
+          <p>Inspection :
+            - vue général<br />
+            - la langue<br />
+          </p>
+          <p>Tout ceci permet d’établir le déséquilibre et le choix de la méthode appropriée.</p>
+          <p>Combinaison d’une ou deux manoeuvres entre l’ostéopathie, le massage ou lesventouses ou encore l’acupuncture ceci en vue  d’un résultats rapide et durable.</p>
+          <p>Les bénéfices peuvent être ressentis dès la première séance ou bien nécessiter plus de séances, le praticien déterminera le nombre de séances nécessaires ainsi que leur fréquence.<br />
+            Médecine occidentale et médecine traditionnelle chinoise peuvent alors agir en synergie et ainsi potentialiser les effets de chacune.</p>');
+	variable_set('custom_pages_patient_page_second_section_link_title', 'Prendre rendez-vous');
+	
+	//Image
+	$conf = _custom_pages_patient_page_get_second_section_image_conf();
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+	
+	/**
+	 * Third section
+	 */
+	variable_set('custom_pages_patient_page_third_section_title', 'Le groupe de thérapeutes');
+	variable_set('custom_pages_patient_page_third_section_body', '<p>Ils sont issu de la formation Phoenix EFCAM</p>
+          <p>Ils sont tous diplômés au minimum en Massage Kinésithérapie (D.E.) ou en Ostéopathie (D.O.) ou en Chiropractie (D.C.) ou un autre diplôme médical français.</p>
+          <p>Grace à leur expérience, plus la formation aux méthodes thérapeutiques manuelles traditionnelles, ils pourront choisir les techniques appropriées.</p>
+          <p>Ils sont en mesure de s’adapter à toute contre indications thérapeutiques.</p>');
+	
+	//First image
+	//module_load_include('inc', 'custom_pages', 'includes/custom_pages_pro_conf');
+	$conf = _custom_pages_patient_page_get_third_section_first_image_conf();
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+	
+	$conf = _custom_pages_patient_page_get_third_section_second_image_conf();
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+	
+	/**
+	 * Fourth section
+	 */
+	variable_set('custom_pages_patient_page_fourth_section_title', 'Les accès & infos');
+	variable_set('custom_pages_patient_page_fourth_section_body', '<h2>les tarifs, les prises en charges mutuelles</h2><br /><br />
+          <p>Quelques soit la séance le tarif est de 70€</p>
+          <p>Les séances ne peuvent être prises en charge par la sécurité sociale mais par votre mutuelle. Demandez votre note honoraire.</p>
+          <p>Possibilité de séance à domicile, aux honoraires seront ajoutés le temps de déplacement et le prix du taxi éventuel.</p>');
+}
+
+
+
+
+/*********************************************************/
+
+
+
+
+/**
+ * Create default pro content
+ */
+function custom_default_content_update_7107(&$sandbox) {
+	//Inlude confs file for pro page
+	module_load_include('inc', 'custom_pages', 'includes/custom_pages_pro_conf');
+	
+	/**
+	 * Create default pro above header content
+	 */
+	variable_set('custom_pages_pro_page_above_header_title', '<p>Formez-vous à nos<br />techniques traditionnelles<br />et integrez notre groupe<br />de praticiens</p>');
+	//variable_set('custom_pages_pro_page_above_header_subtitle', '<p>Urgence Ostéopathie et Acupuncture<br> 7 jours sur 7. </p>');
+	
+	/**
+	 * Create default pro highlight section content
+	 */
+	//variable_set('custom_pages_pro_page_highlight_section_title', '');
+	variable_set('custom_pages_pro_page_highlight_section_body', '<p>Accédez à des techniques traditionnelles chinoises<br />qui ont fait leur preuves depuis plus de 20 siècles<br />et sur un milliard de personnes comme vous et moi.</p>');
+	variable_set('custom_pages_pro_page_highlight_section_link_title', 'Découvrir les thérapies traditionelles manuelles');
+	
+	/**
+	 * Create default pro first section content
+	 */
+	variable_set('custom_pages_pro_page_first_section_title', 'Contenu de la formation');
+	variable_set('custom_pages_pro_page_first_section_body', '<p>La formation repose sur un enseignement donné depuis plus de 25 ans au sein de l’EFCAM.</p>
+          <p>Le nouveau programme allégé sera orienté sur les perturbations énergétiques les plus fréquemment rencontrées.</p>
+          <p>Vous apprendrez à soulager les problèmes cervicaux, dorsaux, lombo-sciatiques ainsi que les perturbations énergétiques localisées sur l’abdomen, les membres et la tête.</p>
+          <p>Tous les cours se divisent en une partie théorique et une partie  pratique.</p>
+          <p>Sur quoi repose cette nouvelle formation?</p>
+          <p>Elle repose sur l’enseignement reçu au seins des hôpitaux chinois et vietnamien, ainsi que sur la synthèse et l’application méthodique de plus de trente ans de nos professeurs.</p>
+          <p>Le résultats sur des milliers de nos patients, nous permets d’établir des statistiques sur l’efficacité ou non de nos techniques. L’élève apprendra essentiel les meilleurs, les plus efficaces les plus simples et dans un premiers temps les plus faciles à utiliser.</p>');
+	variable_set('custom_pages_pro_page_first_section_link_title', 'Prendre contact');
+	
+	//Image
+	$conf = _custom_pages_pro_page_get_first_section_image_conf();
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+
+	
+	/**
+	 * Second section.
+	 */
+	variable_set('custom_pages_pro_page_second_section_title', 'Le déroulé de la formation théorie et<br />pratique');
+	variable_set('custom_pages_pro_page_second_section_body', '<p>Formation<br />Le déroulé de la formation<br />le déroulé de la formation théorique et pratique<br />
+	La formation se réfère aux bases de l’enseignement donné par l’Ecole Franco-Chinoise d’Acupuncture et de Massage (efcam.com)</p>');
+	variable_set('custom_pages_pro_page_second_section_link_title', 'Découvrez le programme');
+	
+	
+	//First image
+	$conf = _custom_pages_pro_page_get_second_section_first_image_conf();
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+	//Second image
+	$conf = _custom_pages_pro_page_get_second_section_second_image_conf();
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+	
+	/**
+	 * Third section.
+	 */
+	variable_set('custom_pages_pro_page_third_section_title', 'Programme de la formation');
+	variable_set('custom_pages_pro_page_third_section_body', '<p>Une séance d’acupuncture traditionnelle dure environ 1 heure. Elle débute par le bilan énergétique: phase de questionnement, de palpation (pouls) et d’observation (langue) qui permet d’établir l’origine du déséquilibre et la méthode de traitement appropriée.<br />
+          Les bénéfices peuvent être ressentis dès la première séance ou bien nécessiter plus de séances, le praticien déterminera le nombre de séances nécessaires ainsi que leur fréquence.<br />
+          Médecine occidentale et médecine traditionnelle chinoise peuvent alors agir en synergie et ainsi potentialiser les effet de chacune.</p>');
+	
+	//Image
+	$conf = _custom_pages_pro_page_get_third_section_image_conf();
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+	
+	/**
+	 * Fourth section.
+	 */
+	variable_set('custom_pages_pro_page_fourth_section_title', 'Prendre contact');
+	variable_set('custom_pages_pro_page_fourth_section_body', '<p>Laissez nous votre e mail, ainsi que votre passé thérapeutique et vos questions qui vous semblent essentielles.<br />
+            Vous pouvez  toujours consulter le site efcam.com qui reste encore d’actualitéMassage et d’Acupuncture (efcam.com) pendant 25 ans.<br />
+            Elle même étant réfèrente des pratiques vues dans les hôpitaux de Médecine Traditionnelles Chinoises en Chine et au Vietnam.</p>');
+}
+
+/**
+ * Create default phone number.
+ */
+function custom_default_content_update_7108(&$sandbox) {
+	variable_set('efcam_settings_contact_phone', '01.42.22.95.12');
+}
+
+/**
+ * Default main header.
+ */
+function custom_default_content_update_7109(&$sandbox) {
+	drupal_set_installed_schema_version('custom_default', '7100');
+	
+	//Pro page and patient page header
+	module_load_include('inc', 'custom_pages', 'includes/custom_pages_default_header_conf');
+	
+	//Custom patient page
+	$conf = _custom_pages_default_page_get_header_conf();
+	//Add default image
+	$file = _custom_default_content_add_default_file($conf);
+	variable_set($conf['module_name'] . '_' . $conf['context'] . '_' . $conf['image']['var_name'], $file->fid);
+}

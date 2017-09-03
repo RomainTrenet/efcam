@@ -1,0 +1,48 @@
+@import "../config_mobile";
+
+/**
+ * CTAs
+ */
+#header {
+  .ctas {
+    li { font-size: $base-font-size; }
+    a.link { font-size: 1em; }
+  }
+}
+
+//Mobile
+@media (max-width: 767px) {
+  /**
+   * Header layout
+   */
+  #header {
+    .ctas { margin-top: $space; }
+    text-align: center;
+    .table {
+      display: block; width: auto;
+    }
+    .col-branding,
+    .col-cta{ display: block; width: 100%; }
+    .ctas { /*text-align: center;*/ }
+    .ctas li {
+      margin-top: $space;
+      &:first-child {margin-top: 0; }
+    }
+    .col-branding { padding-top: $space/2; padding-bottom: $space/2; }
+  }
+}
+
+
+
+//Mobile
+@media (min-width: 767px) {
+  /**
+   * CTAs
+   */
+  #header {
+    .ctas {
+      li { margin-left: $space; }
+      li:first-child { margin-left: 0; }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+/*
+ * COLORS
+ */
+/*
+$prim-color : #3de6a8;
+$prim-hov-color : #3dffa8;
+$error-color : #ff5363;
+
+$variant_first : #8995b6;
+$variant_second : #657192;
+*/
+/*
+ * Vars
+ */
+/* =============================================================================
+ *   Layout, Position & Z-index
+ * ========================================================================== */
+/*#page-wrapper {
+  position: relative;
+}
+.topnav {
+  z-index: 2;
+  position: relative;
+}
+#page {
+  padding-top: 0px;
+}
+#header {
+  z-index: 10!important;//Sticky js
+}
+#header-sticky-wrapper {
+  height: 0!important;//Sticky js
+}*/
+/**
+ * Header
+ */
+#header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100% !important; }
+
+.slicknav_menu {
+  z-index: 11; }
+
+.l-content-header {
+  position: relative; }
+
+.l-content-header .ec-content-header {
+  position: relative;
+  z-index: 1; }
+
+.l-content-header .ec-above-header {
+  position: relative;
+  z-index: 2; }
+
+/**
+ * Icons absolute
+ Just add more padding-left to your parent.
+ */
+.icon-absolute {
+  position: relative; }
+
+.icon-absolute:before {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  top: 50%;
+  margin-top: -0.5em; }
+
+/**
+ * Sections styles
+ */
+.section .title h1 {
+  margin-bottom: 1em; }
+
+.section .visu {
+  text-align: center; }
+
+.section .visu-rouded .visu-wrapper {
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden; }
+
+.section .visu-top-shadow .visu-wrapper {
+  box-shadow: 0px -10px 0 #FFFFFF; }
+
+.section .visu-bottom-shadow .visu-wrapper {
+  box-shadow: 0px 10px #FFFFFF; }
+
+.section .visus-cosmic .visu.first {
+  z-index: 1; }
+
+.section .visus-cosmic .visu.second {
+  z-index: 2; }
+
+.section-curve {
+  overflow: hidden;
+  /*.title {
+    h1 { margin-bottom: 1em; }
+  }*/ }
+
+.section-curve .container-inner {
+  position: relative; }
+
+.section-curve .container-inner:before, .section-curve .container-inner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1; }
+
+.section-curve .container-inner:before {
+  bottom: 100%;
+  border-radius: 100% 100% 0 0; }
+
+.section-curve .container-inner:after {
+  top: 100%;
+  border-radius: 0 0 100% 100%; }
+
+.section-curve .row {
+  position: relative;
+  z-index: 2;
+  padding: 40px 0; }
+
+.section-btn-final .btn-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: center; }
+
+.section.section-scnd-bkgd-color .container-wrapper {
+  background-color: #FAEEB9; }
+
+.section.section-scnd-bkgd-color .container-inner:before, .section.section-scnd-bkgd-color .container-inner:after {
+  background-color: #FAEEB9; }
+
+.section.section-main-bkgd-color {
+  color: #FFFFFF; }
+
+.section.section-main-bkgd-color .container-wrapper {
+  background-color: #2E4A70; }
+
+.section.section-main-bkgd-color .container-inner:before, .section.section-main-bkgd-color .container-inner:after {
+  background-color: #2E4A70; }
+
+.section.section-main-bkgd-color h1, .section.section-main-bkgd-color h2, .section.section-main-bkgd-color h3, .section.section-main-bkgd-color h4, .section.section-main-bkgd-color h5, .section.section-main-bkgd-color h6, .section.section-main-bkgd-color p {
+  color: #FFFFFF; }
+
+.section.section-thrd-bkgd-color {
+  color: #FFFFFF; }
+
+.section.section-thrd-bkgd-color .container-wrapper {
+  background-color: #24AED5; }
+
+.section.section-thrd-bkgd-color .container-inner:before, .section.section-thrd-bkgd-color .container-inner:after {
+  background-color: #24AED5; }
+
+.section.section-thrd-bkgd-color h1, .section.section-thrd-bkgd-color h2, .section.section-thrd-bkgd-color h3, .section.section-thrd-bkgd-color h4, .section.section-thrd-bkgd-color h5, .section.section-thrd-bkgd-color h6, .section.section-thrd-bkgd-color p {
+  color: #FFFFFF; }
+
+.section.section-bottom .title {
+  text-align: center; }
+
+.section .btn {
+  box-shadow: 0px -5px 0 #FFFFFF; }
+
+.section-highlighted {
+  text-align: center; }
+
+.section-visu-bottom-right img {
+  display: inline-block; }

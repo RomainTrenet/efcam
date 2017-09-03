@@ -1,0 +1,19 @@
+<?php
+
+function efcam_meet_appointment_schedule_view() {
+	return ('<p>Prendre RDV</p>');
+}
+
+/**
+ * Implementation of hook_permission
+ *
+ * @return array
+ */
+function efcam_meet_permission() {
+	return array(
+		'schedule appointment' => array(
+			'title' => t('Schedule appointment'),
+			'description' => t('Schedule an appointment.'),
+		),
+	);
+}

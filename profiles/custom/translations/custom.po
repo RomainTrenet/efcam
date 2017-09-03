@@ -1,0 +1,58 @@
+# French translation of EFCAM
+# Copyright (c) 2017 by the Romain Trenet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal core (7.54)\n"
+"POT-Creation-Date: 2017-03-12 07:01+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+msgid "Qualified accesses"
+msgstr "Accès diplomés"
+
+msgid "Make an appointment"
+msgstr "Prendre rendez-vous"
+
+msgid "Get in touch for the training"
+msgstr "Prendre contact pour la formation"
+
+msgid "Administer EFCAM"
+msgstr "Administrer EFCAM"
+
+msgid "Perform administration tasks for EFCAM."
+msgstr "Effectuer des tâches d'administration pour EFCAM."
+
+msgid "Informations for EFCAM"
+msgstr "Informations pour EFCAM"
+
+msgid "Contact mail address"
+msgstr "Adresse mail de contact"
+
+msgid "Abode header disc"
+msgstr "Disque au dessus de l'entête"
+
+msgid "Highlight section"
+msgstr "Section mise en avant"
+
+msgid "First section"
+msgstr "Première section"
+
+msgid "Second section"
+msgstr "Seconde section"
+
+msgid "Third section"
+msgstr "Troisième section"
+
+msgid "Fourth section"
+msgstr "Quatrième section"
+
+msgid "If you want to make a breakline (&lt;br&gt;), type MAJ+ENTER. If you want to make a new paragraph, type ENTER."
+msgstr "Si vous voulez faire un saut de ligne (<br>), tapez MAJ+ENTRER. Si vous voulez faire un nouveau paragraphe, tapez ENTRER."
+
+msgid "If you want to make a breakline (&lt;br&gt;), type MAJ+ENTER. If you want to make a new paragraph, type ENTER. &lt;p&gt; tags wont appear, you don't need to add a &lt;h1&gt; tag."
+msgstr "Si vous voulez faire un saut de ligne (<br>), tapez MAJ+ENTRER. Si vous voulez faire un nouveau paragraphe, tapez ENTRER. Les marqueurs &lt;p&gt; n'apparaitont pas, vous n'avez pas besoin d'ajouter un marqueur de type &lt;h1&gt;."

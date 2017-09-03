@@ -1,0 +1,38 @@
+.table {
+  display: table; width: 100%;
+  .table-cell {
+    display: table-cell; vertical-align: middle;
+  }
+}
+
+.f-left { float: left; }
+.f-right { float: right; }
+.f-none { float: none; }
+
+//Tablet,
+@media (max-width: 767px) {
+  .f-left-xs { float: left; }
+  .f-right-xs { float: right; }
+  .f-none-xs { float: none; }
+}
+
+//Tablet,
+@media (min-width: 768px) and (max-width: 991px) {
+  .f-left-sm { float: left; }
+  .f-right-sm { float: right; }
+  .f-none-sm { float: none; }
+}
+
+//Medium
+@media (min-width: 992px) and (max-width: 1199px) {
+  .f-left-md { float: left; }
+  .f-right-md { float: right; }
+  .f-none-md { float: none; }
+}
+
+//Large
+@media (min-width: 1200px) {
+  .f-left-lg { float: left; }
+  .f-right-lg { float: right; }
+  .f-none-lg { float: none; }
+}

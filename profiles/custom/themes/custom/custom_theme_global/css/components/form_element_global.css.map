@@ -1,0 +1,1 @@
+{"version":3,"sources":["form_element_global.css"],"names":[],"mappings":"AAAA;;GAEG;AACH;;;;;;;EAOE;AACF;;GAEG","file":"form_element_global.css","sourcesContent":["/*\n * COLORS\n */\n/*\n$prim-color : #3de6a8;\n$prim-hov-color : #3dffa8;\n$error-color : #ff5363;\n\n$variant_first : #8995b6;\n$variant_second : #657192;\n*/\n/*\n * Vars\n */\n"]}

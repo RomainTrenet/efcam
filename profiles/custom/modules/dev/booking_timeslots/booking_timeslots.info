@@ -1,0 +1,36 @@
+name = Booking Timeslots
+description = Provides booking functionality, so users can book time slots within specified opening hours.
+core = 7.x
+package = Date/Time
+project = booking_timeslots
+dependencies[] = addressfield
+dependencies[] = calendar
+dependencies[] = date_views:date
+dependencies[] = entity
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = list
+dependencies[] = number
+dependencies[] = opening_hours
+dependencies[] = options
+dependencies[] = strongarm
+dependencies[] = taxonomy
+dependencies[] = workflow
+features[ctools][] = strongarm:strongarm:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[taxonomy][] = booking_type
+features[variable][] = pathauto_taxonomy_term_booking_type_pattern
+features[views_view][] = bookings
+features[views_view][] = bt_schedule
+features_exclude[dependencies][booking_timeslots_example] = booking_timeslots_example
+features_exclude[dependencies][ctools] = ctools
+files[] = booking_timeslots.module
+test_dependencies[] = booking_timeslots_example
+
+; Information added by Drupal.org packaging script on 2015-12-14
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "booking_timeslots"
+datestamp = "1450093743"
+

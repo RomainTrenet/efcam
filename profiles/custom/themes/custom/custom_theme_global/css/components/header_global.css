@@ -1,0 +1,125 @@
+/*
+ * COLORS
+ */
+/*
+$prim-color : #3de6a8;
+$prim-hov-color : #3dffa8;
+$error-color : #ff5363;
+
+$variant_first : #8995b6;
+$variant_second : #657192;
+*/
+/*
+ * Vars
+ */
+#header {
+  background-color: #FFFFFF; }
+
+/**
+ *  Default Main content Header
+ */
+.ec-content-header {
+  display: table;
+  height: 444px;
+  width: 100%;
+  position: relative;
+  background-color: #2E4A70; }
+
+.ec-content-header .bkgd {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.ec-content-header .bkgd img {
+  max-width: none;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: -200%;
+  bottom: -200%;
+  left: -200%;
+  right: -200%; }
+
+/**
+ * Header
+ */
+#header.is_stuck {
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4); }
+
+/**
+ * CTAs
+ */
+#header .ctas ul {
+  font-size: 0; }
+
+#header .ctas li {
+  display: inline-block; }
+
+#header h1.site-name {
+  font-size: inherit; }
+
+h2.site-slogan {
+  margin-top: 5px;
+  font-size: 1em;
+  font-family: 'robotoslabregular', Helvetica, Sans-serif;
+  color: #2C2C2C; }
+
+/**
+ * Disc header
+ */
+.l-content-header .ec-above-header {
+  position: relative; }
+
+.l-content-header .ec-above-header-inner {
+  position: absolute;
+  left: 0;
+  width: 100%; }
+
+.ec-disc .disc-wrapper {
+  border-radius: 50%;
+  border: solid #FFFFFF;
+  background-color: #1B284A;
+  margin: 0 auto;
+  position: relative; }
+
+.ec-disc .disc-inner {
+  text-align: center; }
+
+.ec-disc h1,
+.ec-disc h2 {
+  color: #FAEEB9;
+  font-family: 'robotoslablight', Helvetica, Sans-serif; }
+
+.ec-disc h1 {
+  font-size: 3.6em; }
+
+.ec-disc h2 {
+  font-size: 1.8em;
+  margin-top: 1em; }
+
+.ec-disc span.icon {
+  color: #FAEEB9;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%; }
+
+/**
+ * Nav, global
+ */
+/*
+ul.nav {
+  list-style-type: none; margin: 0; padding: 0;
+  li a,
+  li.user figure figcaption {
+    color: $third-color; font-size: 15px; font-family: robotoregular, Sans-serif; line-height: 16px; text-decoration: none;
+  }
+}*/

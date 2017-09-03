@@ -1,0 +1,6 @@
+# OS specific trash
+.DS_Store
+Thumbs.db
+
+# Sass-specific
+.sass-cache

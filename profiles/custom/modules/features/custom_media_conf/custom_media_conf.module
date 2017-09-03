@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Custom | Media conf feature.
+ */
+
+include_once 'custom_media_conf.features.inc';

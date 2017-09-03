@@ -1,0 +1,9 @@
+name = Custom | Base
+description = This module is used to custom admin
+package = Custom
+core = 7.x
+version = "7.x-1.0"
+
+dependencies[] = addressfield
+dependencies[] = fancybox
+dependencies[] = simple_gmap
